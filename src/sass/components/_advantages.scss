@@ -1,0 +1,89 @@
+.advantages {
+  background-color: #fff5f6;
+}
+.advantages__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 12px;
+  }
+  @media screen and (min-width: $desktop) {
+    gap: 90px;
+  }
+}
+
+.advantages__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--section-title-color);
+  margin-bottom: 24px;
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 16px;
+    font-size: 58px;
+  }
+}
+
+.advantages__subtitle {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #000000;
+  width: 230px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 170px;
+    font-size: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+    font-size: 16px;
+  }
+}
+
+.advantages__icon1::before {
+  display: block;
+  content: url(/src/images/png/bucket-cow.png);
+  margin-bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__icon2::before {
+  display: block;
+  content: url(/src/images/png/bucket-fruits.png);
+  margin-bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__icon3::before {
+  display: block;
+  content: url(/src/images/png/heart.png);
+  margin-bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
+}
