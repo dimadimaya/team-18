@@ -1,3 +1,40 @@
 :root {
-  --section-title-color: #d41443;
+  --colorPrimary: #d41443;
+  --colorBlack: #000000;
+  --colorWhite: #ffffff;
+  --colorLine: #e1e1e1;
+  --colorOverline: #ffa5ba;
+  --colorBorder: #e18298;
+  --colorDescription: #907e82;
+  // fonts
+  --fontPrimary: 'DM Sans';
+  --fontPrimaryAlternative: sans-serif;
+  --fontSecondary: 'Titan One';
+  --fontSecondaryAlternative: cursive;
+  //background colors
+  --bgcPage: #ffffff;
+  --bgcSection: #fff5f6;
+  --bgcHeader: #ffb8ca;
+  --bgcMenuMobile: #e17992;
+  --bgcBackDrop: rgba(255, 184, 202, 0.6);
+  --bgcColorBeige: #f0d1a5;
+  --bgcColorLightGreen: #c2e297;
+  --bgcBtnDark: #d41443;
+  --bgcBtnDarkHover: #c7133e;
+  --bgcBtnWhite: #ffffff;
+  --bgcBtnWhiteHover: #ecebeb;
+  --bgcQuote: #fafafa;
+  --bgcSocial: #fea5bb;
+  // sizes
+  --paddingContainer: 16px;
+  --shadowMenuMobile: -8px 0px 20px rgba(0, 0, 0, 0.25);
+  --menuMobileWidth: 250px;
+  --menuMobileHeight: 502px;
+  --menuTabletWidth: 254px;
+  --menuTabletHeight: 100vh;
+  // parameters
+  --durationPrimary: 250ms;
+  --durationSecondary: 400ms;
+  --timingPrimary: cubic-bezier(0.4, 0, 0.2, 1);
+  --timingSecondary: ease-out;
 }
