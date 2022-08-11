@@ -49,6 +49,10 @@ address {
   font-style: normal;
 }
 
+:root {
+  --section-title-color: #d41443;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -63,6 +67,63 @@ address {
   margin: -1px;
 }
 
-:root {
-  --bgc-main: #ffffff;
+.products__label {
+  margin-bottom: 15px;
+  font-family: "Titan One";
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFA5BA;
+}
+
+.products__title {
+  margin-bottom: 8px;
+  font-family: "Titan One";
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--section-title-color);
+}
+
+.product-list__item {
+  margin-top: 140px;
+  width: 280px;
+  height: 489px;
+  border-radius: 24px;
+}
+.product-list__item:first-child {
+  background-color: #FFB8CA;
+}
+.product-list__item:nth-child(2) {
+  background-color: #F0D1A5;
+}
+.product-list__item:last-child {
+  background-color: #C2E297;
+}
+.product-list__item::before {
+  content: "";
+  width: 280px;
+  height: 280px;
+}
+
+.product-list__title {
+  font-family: "Titan One";
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.product-list__describe {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
 }/*# sourceMappingURL=index.css.map */
