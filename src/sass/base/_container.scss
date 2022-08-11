@@ -1,4 +1,4 @@
-$mobile:480px;
+$mobile:320px;
 $tablet:768px;
 $desktop:1200px;
 
@@ -10,7 +10,7 @@ $desktop:1200px;
     width: 100%;
 
 @media screen and (min-width:$mobile) {
-    width: 480px;
+    width: 320px;
     }
 
 @media screen and (min-width:$tablet) {
