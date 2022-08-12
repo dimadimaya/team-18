@@ -1,5 +1,5 @@
 .advantages {
-  background-color: #fff5f6;
+  background-color: var(--bgcSection);
 }
 .advantages__list {
   @media screen and (min-width: $tablet) {
@@ -12,16 +12,15 @@
 }
 
 .advantages__title {
-  font-family: 'Titan One';
+  font-family: var(--fontSecondary);
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--section-title-color);
   margin-bottom: 24px;
-  color: #d41443;
+  color: var(--colorPrimary);
   @media screen and (min-width: $tablet) {
     font-size: 48px;
     margin-bottom: 12px;
@@ -33,12 +32,12 @@
 }
 
 .advantages__subtitle {
-  font-family: 'DM Sans';
+  font-family: var(--fontPrimary);
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
-  color: #000000;
+  color: var(--colorBlack);
   width: 230px;
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
