@@ -7,19 +7,25 @@
 // }
 
 // .container {
-//     padding: 0 16px;
-//     width: 312px;
+//     padding: 0 20px;
 //     margin: 0 auto;
 
+//     @media screen and (min-width: 279px) {
+//         width: calc(100vw - 40px);
+//     }
+
 //     @media screen and (min-width: 768px) {
-//         width: 736px;
+//         width: 768px;
+//         padding: 0 32px;
 //     }
 
 //     @media screen and (min-width: 1200px) {
 //         width: 1200px;
+//         padding: 0 16px;
 //     }
 // }
 
+// --- header scss
 .section__header {
     position: absolute;
     top: 0;
@@ -70,7 +76,7 @@
 }
 
 .nav__item {
-    &+& {
+    & + & {
         margin-left: 35px;
     }
 }
@@ -83,10 +89,6 @@
 .header__menu-btn {
     background-color: transparent;
     cursor: pointer;
-
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
 }
 
 .header__menu-mobile {
@@ -155,34 +157,6 @@
     }
 }
 
-.button-white--desktop {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-
-    display: block;
-    width: 160px;
-    height: 44px;
-
-    @media screen and (min-width: 768px) {
-        margin-left: 32px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-left: 141px;
-    }
-}
-
-.button-white--menu {
-    display: block;
-    width: 209px;
-    height: 44px;
-    margin: 60px auto 19px;
-
-    @media screen and (min-width: 768px) {
-        width: 186px;
-    }
-}
 
 .nav__header {
     text-align: left;
@@ -192,7 +166,7 @@
     display: block;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.286;
+    line-height: 1.29;
     color: var(--colorWhite);
     border-top: 1px solid var(--colorBorder);
     border-bottom: 1px solid var(--colorBorder);
@@ -218,6 +192,7 @@
     color: inherit;
 }
 
+// --- buttons scss
 .button-white {
     @include flex-pos();
     padding: 0;
@@ -226,7 +201,7 @@
     font-size: 16px;
 
     color: var(--colorPrimary);
-    background-color: var(--bgcPage);
+    background-color: var(--bgcBtnWhite);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -260,10 +235,41 @@
     }
 }
 
+.button-white--desktop {
+    display: block;
+    width: 160px;
+    height: 44px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 141px;
+    }
+}
+
+.button-white--menu {
+    display: block;
+    width: 209px;
+    height: 44px;
+    margin: 60px auto 19px;
+
+    @media screen and (min-width: 768px) {
+        width: 186px;
+    }
+}
+
 .button-white__icon,
 .button-dark__icon {
-    width: 4px;
+    width: 5px;
     height: 8px;
     fill: currentColor;
     margin-left: 12px;
 }
+
+// --- hero scss
