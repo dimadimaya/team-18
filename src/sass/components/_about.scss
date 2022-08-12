@@ -1,0 +1,98 @@
+.about {
+    background-color: var(--bgcSection);
+    background-image: url('../images/desktop/desktop-about-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding-bottom: 40px;
+
+    &__label {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 2.125rem;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--colorOverline);
+
+        @media screen and (min-width:$tablet) {
+            
+            }
+
+        @media screen and (min-width:$desktop) {
+            padding-bottom: 20px;
+            }
+    }
+
+    &__title {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.625rem;
+        line-height: 4.125rem;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--bgcBtnDark);
+       // width: 200px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__img {
+        margin-right: 99px;
+    }
+
+    &__descr {
+        margin-top: 150px;
+        width: 463px;
+
+        &--fat {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 176%;
+            letter-spacing: 0.04em;
+            color: var(--colorBlack);
+        }
+
+        &--thin {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 194%;
+            letter-spacing: 0.04em;
+            color: var(--colorDescription);
+        }
+
+        &-list {
+            text-align: left;
+
+           /* &-item {
+
+            }*/
+
+        }
+
+    }
+
+    &__btn {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+        color: var(--colorPrimary);
+    }
+}
