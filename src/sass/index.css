@@ -142,30 +142,6 @@ button {
   }
 }
 
-.section {
-  max-width: 1600px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.container {
-  padding: 0 16px;
-  width: 312px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 736px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
 .section__header {
   position: absolute;
   top: 0;
