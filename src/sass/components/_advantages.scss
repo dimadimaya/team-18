@@ -1,13 +1,21 @@
 .advantages {
+  padding: 60px 0;
   background-color: var(--bgcSection);
 }
 .advantages__list {
   @media screen and (min-width: $tablet) {
     display: flex;
     gap: 12px;
+    text-align: left;
   }
   @media screen and (min-width: $desktop) {
     gap: 90px;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
   }
 }
 
@@ -38,10 +46,6 @@
   font-size: 12px;
   line-height: 1.7;
   color: var(--colorBlack);
-  width: 230px;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 32px;
-  }
   @media screen and (min-width: $tablet) {
     width: 170px;
     font-size: 14px;
