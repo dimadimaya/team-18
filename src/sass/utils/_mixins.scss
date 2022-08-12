@@ -1,5 +1,0 @@
-@mixin flex-pos($type: flex, $jc: center, $ai: center) {
-    display: #{$type};
-    justify-content: #{$jc};
-    align-items: #{$ai};
-}
