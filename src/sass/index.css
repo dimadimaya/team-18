@@ -88,7 +88,6 @@ address {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #ffb8ca;
 }
 
 .section__header {
@@ -99,6 +98,7 @@ address {
   z-index: 5;
   padding: 0;
   padding-top: 8px;
+  background-color: #ffb8ca;
 }
 @media screen and (min-width: 768px) {
   .section__header {
