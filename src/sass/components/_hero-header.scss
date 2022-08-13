@@ -24,6 +24,18 @@
     background-color: var(--bgcHeader);
 }
 
+.header__link {
+    // margin-left: 20px;
+
+    // @media screen and (min-width: 768px) {
+    //     margin-left: 32px;
+    // }
+
+    // @media screen and (min-width: 768px) {
+    //     margin-left: 56px;
+    // }
+}
+
 .header__logo {
     display: block;
     width: 199px;
@@ -51,9 +63,17 @@
 }
 
 .nav__item {
+    transition: color var(--durationPrimary) var(--timingPrimary);
+    
     & + & {
         margin-left: 35px;
     }
+
+    &:hover,
+    &:focus,
+    &:active {
+                color: var(--colorPrimary);
+            }
 }
 
 .nav__link {
@@ -148,9 +168,10 @@
     transition: color var(--durationPrimary) var(--timingPrimary);
 
     &:hover,
-    &:focus {
-        color: var(--colorPrimary);
-    }
+    &:focus,
+    &:active {
+                color: var(--colorPrimary);
+            }
 }
 
 .nav__item-mobile--current,
@@ -521,6 +542,13 @@
     color: var(--colorPrimary);
     border: none;
     border-radius: 50%;
+    transition: background-color var(--durationPrimary) var(--timingPrimary), color var(--durationPrimary) var(--timingPrimary);
+
+    &:hover,
+    &:focus {
+            background-color: var(--colorPrimary);
+            color: var(--colorWhite);
+    }
 }
 
 .arrow-button--for-hero {
