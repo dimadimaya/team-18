@@ -1,9 +1,13 @@
 .section {
-  max-width: 1600px;
+  padding-bottom: 40px;
+  padding-top: 40px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 body {
   font-family: var(--fontPrimary), var(--fontPrimaryAlternative);
@@ -12,6 +16,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.04em;
   font-weight: 500;
+  margin: 0;
 }
 
 .body-fixed {
