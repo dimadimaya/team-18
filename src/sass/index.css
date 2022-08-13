@@ -201,8 +201,14 @@ button {
   color: var(--colorWhite);
 }
 
+.nav__item {
+  transition: color var(--durationPrimary) var(--timingPrimary);
+}
 .nav__item + .nav__item {
   margin-left: 35px;
+}
+.nav__item:hover, .nav__item:focus, .nav__item:active {
+  color: var(--colorPrimary);
 }
 
 .nav__link {
@@ -296,7 +302,7 @@ button {
   border-bottom: 1px solid var(--colorBorder);
   transition: color var(--durationPrimary) var(--timingPrimary);
 }
-.nav__item-mobile:hover, .nav__item-mobile:focus {
+.nav__item-mobile:hover, .nav__item-mobile:focus, .nav__item-mobile:active {
   color: var(--colorPrimary);
 }
 
@@ -685,6 +691,11 @@ button {
   color: var(--colorPrimary);
   border: none;
   border-radius: 50%;
+  transition: background-color var(--durationPrimary) var(--timingPrimary), color var(--durationPrimary) var(--timingPrimary);
+}
+.arrow-button:hover, .arrow-button:focus {
+  background-color: var(--colorPrimary);
+  color: var(--colorWhite);
 }
 
 .arrow-button--for-hero {
