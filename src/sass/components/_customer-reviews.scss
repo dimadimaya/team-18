@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 .reviews {
+=======
+.reviews__container {
+>>>>>>> Stashed changes
   padding-left: 20px;
   padding-right: 20px;
   width: 320px;
@@ -28,7 +32,10 @@
   width: 280px;
   background: #fafafa;
   z-index: 9;
+<<<<<<< Updated upstream
   margin-top: 32px;
+=======
+>>>>>>> Stashed changes
 
   @media screen and (min-width: 768px) {
     width: 620px;
@@ -42,7 +49,11 @@
 }
 
 .reviews__thumb::before {
+<<<<<<< Updated upstream
   content: url(/src/images/png/brackets.png);
+=======
+  content: url(../images/jumpers.png);
+>>>>>>> Stashed changes
   position: absolute;
   display: block;
   left: 53px;
@@ -60,6 +71,7 @@
   }
 }
 
+<<<<<<< Updated upstream
 .reviews__thumb::after {
   content: '';
   display: block;
@@ -73,6 +85,8 @@
   bottom: -16px;
 }
 
+=======
+>>>>>>> Stashed changes
 .reviews__line {
   margin: 74px 50px 17px;
   width: 180px;
@@ -137,8 +151,13 @@
   line-height: 1, 86;
   text-align: center;
   margin: 0;
+<<<<<<< Updated upstream
   margin-top: 32px;
   margin-bottom: 16px;
+=======
+  padding-top: 16px;
+  padding-bottom: 16px;
+>>>>>>> Stashed changes
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -172,6 +191,7 @@
   width: 12px;
   height: 12px;
 }
+<<<<<<< Updated upstream
 
 // .slider .slick-arrow {
 //   display: none;
@@ -202,3 +222,5 @@
   background-color: red;
   background-image: url(/src/images/png/home.png);
 }
+=======
+>>>>>>> Stashed changes
