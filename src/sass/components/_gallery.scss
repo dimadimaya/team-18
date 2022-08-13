@@ -1,0 +1,25 @@
+.gallery {
+    background: linear-gradient(var(--bgcSection), var(--bgcPage));
+}
+
+.gallery__set {  
+    @media screen and (min-width: $mobile) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    // @media screen and (min-width: $tablet) {
+
+    // }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.gallery__img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

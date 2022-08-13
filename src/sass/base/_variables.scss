@@ -1,4 +1,5 @@
 :root {
+  // colors
   --colorPrimary: #d41443;
   --colorBlack: #000000;
   --colorWhite: #ffffff;
@@ -6,11 +7,13 @@
   --colorOverline: #ffa5ba;
   --colorBorder: #e18298;
   --colorDescription: #907e82;
+
   // fonts
   --fontPrimary: 'DM Sans';
   --fontPrimaryAlternative: sans-serif;
   --fontSecondary: 'Titan One';
   --fontSecondaryAlternative: cursive;
+
   //background colors
   --bgcPage: #ffffff;
   --bgcSection: #fff5f6;
@@ -25,6 +28,7 @@
   --bgcBtnWhiteHover: #ecebeb;
   --bgcQuote: #fafafa;
   --bgcSocial: #fea5bb;
+
   // sizes
   --paddingContainer: 16px;
   --shadowMenuMobile: -8px 0px 20px rgba(0, 0, 0, 0.25);
@@ -32,6 +36,7 @@
   --menuMobileHeight: 502px;
   --menuTabletWidth: 254px;
   --menuTabletHeight: 100vh;
+  
   // parameters
   --durationPrimary: 250ms;
   --durationSecondary: 400ms;
