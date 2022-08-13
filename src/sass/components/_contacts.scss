@@ -236,10 +236,66 @@
     // fill: currentColor;
     margin-left: 12px;
 }
-.button-red__icon {
-    fill: var(--colorWhite);
-    
+.button-red:hover {
+    animation: glowing 1300ms infinite;
 }
+ 
+
+  @keyframes glowing {
+      0% {
+          background-color: var(--bgcBtnDarkHover);
+          box-shadow: 0 0 3px var(--bgcBtnDarkHover);
+      }
+
+      50% {
+          background-color:var(--bgcBtnDark);
+          box-shadow: 0 0 15px var(--bgcBtnDark);
+      }
+
+      100% {
+          background-color: var(--bgcBtnDarkHover);
+          box-shadow: 0 0 3px var(--bgcBtnDarkHover);
+      }
+  }
+.modal__close-btn {
+    animation: pulsing 2s infinite;
+    }
+    
+    @-webkit-keyframes pulsing {
+        0% {
+            -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5)
+        }
+    
+        50% {
+            -webkit-transform: scale(1.0, 1.0);
+            transform: scale(1.0, 1.0);
+        }
+    
+        100% {
+            -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5);
+        }
+    }
+    
+    @keyframes pulsing {
+        0% {
+            -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5)
+        }
+    
+        50% {
+            -webkit-transform: scale(1.0, 1.0);
+            transform: scale(1.0, 1.0);
+        }
+    
+        100% {
+            -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5);
+        }
+    }
+    
+
 
 .is-hidden {
     .modal {
@@ -286,7 +342,7 @@
 
     @media screen and (max-width: 1199px) {
         & {
-            z-index: 3;
+            z-index: 3000;
         }
 
     }
