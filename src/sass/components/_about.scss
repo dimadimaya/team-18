@@ -14,7 +14,7 @@
             background-image: url('../images/desktop/desktop-about-background@2x.png');
         }
     
-        @media (device-pixel-ratio: 3) , (resolution: 3dppx) , (resolution: 288dpi) and (min-width:$desktop) {
+        @media (min-device-pixel-ratio: 3) , (min-resolution: 3dppx) , (min-resolution: 288dpi) and (min-width:$desktop) {
             background-image: url('../images/desktop/desktop-about-background@3x.png');
         }
 
@@ -42,7 +42,7 @@
             background-image: url('../images/desktop/desktop-about-background@2x.png');
         }
 
-        @media (device-pixel-ratio: 3) , (resolution: 3dppx) , (resolution: 288dpi) and (max-width:767px) {
+        @media (min-device-pixel-ratio: 3) , (min-resolution: 3dppx) , (min-resolution: 288dpi) and (max-width:767px) {
             background-image: url('../images/desktop/desktop-about-background@3x.png');
         }
 
