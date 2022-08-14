@@ -11,6 +11,7 @@
 
     @media screen and (min-width: 768px) {
         position: absolute;
+        background-color: transparent;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -19,6 +20,7 @@
 
     @media screen and (min-width: 1200px) {
         position: absolute;
+        background-color: transparent;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
