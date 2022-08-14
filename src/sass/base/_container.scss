@@ -10,18 +10,18 @@ $desktop:1200px;
     width: 100%;
 
 @media screen and (min-width:$mobile) {
-    width: 320px;
+    max-width: 480px;
     }
 
 @media screen and (min-width:$tablet) {
     padding-left: 32px;
     padding-right: 32px;
-    width: 768px;
+    max-width: 768px;
     }
 
 @media screen and (min-width:$desktop) {
     padding-left: 16px;
     padding-right: 16px;
-    width: 1200px;
+    max-width: 1200px;
     }
 }

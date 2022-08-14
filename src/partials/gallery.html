@@ -1,1 +1,50 @@
-gallery
+<section class="gallery">
+  <div class="container">
+    <h2 class="visually-hidden">Gallery</h2>
+    <div class="gallery__set">
+      <picture class="gallery__img">
+        
+        <source
+          srcset="
+            ./images/mobile/mobile-gallery-pic5-0.png    1x,
+            ./images/mobile/mobile-gallery-pic5-0@2x.png 2x,
+            ./images/mobile/mobile-gallery-pic5-0@3x.png 3x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+
+        <source
+          srcset="
+            ./images/tablet/tablet-gallery-pic5-0.png    1x,
+            ./images/tablet/tablet-gallery-pic5-0@2x.png 2x,
+            ./images/tablet/tablet-gallery-pic5-0@3x.png 3x
+          "
+          media="(min-width: 768px) and (max-width: 1199px)"
+          type="image/png"
+        />
+
+        <source
+          srcset="
+            ./images/desktop/desktop-gallery-pic5-0.png    1x,
+            ./images/desktop/desktop-gallery-pic5-0@2x.png 2x,
+            ./images/desktop/desktop-gallery-pic5-0@3x.png 3x
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
+
+        <img
+          srcset="
+            ./images/mobile/mobile-gallery-pic5-0.png     450w,
+            ./images/mobile/mobile-gallery-pic5-0@2x.png  900w,
+            ./images/mobile/mobile-gallery-pic5-0@3x.png 1350w
+          "
+          sizes="50vw"
+          src="./images/mobile/mobile-gallery-pic5-0.png"
+          alt="gallery"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
