@@ -1,6 +1,6 @@
 .about {
     background-color: var(--bgcSection);
-    padding-bottom: 40px;
+    padding-bottom: 0;
     width: 100%;
 
     @media screen and (min-width:$desktop) {
@@ -36,6 +36,7 @@
 
         @media screen and (min-width:$desktop) {
             max-width: 1200px;
+            width: 1168px;
             }
     }
 
@@ -123,9 +124,12 @@
             }
 
         @media screen and (min-width:$desktop) {
+            max-height: 501px;
+            max-width: 501px;
             width: 501px;
             height: 501px;
             margin-right: 99px;
+            margin-top: 60px;
             }
     }
 
@@ -144,6 +148,7 @@
         @media screen and (min-width:$desktop) {
             width: 28.9375rem;
             margin-top: 150px;
+            margin-bottom: auto;
         }
 
         &--fat {
