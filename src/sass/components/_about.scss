@@ -45,10 +45,9 @@
         @media (device-pixel-ratio: 3) , (resolution: 3dppx) , (resolution: 288dpi) and (max-width:767px) {
             background-image: url('../images/desktop/desktop-about-background@3x.png');
         }
-        
-        @media screen and (min-width:$tablet) { background-image: none;}
 
         @media screen and (min-width:$tablet) {
+            background-image: none;
             width: 768px;
             max-width: 704px;
             }   
