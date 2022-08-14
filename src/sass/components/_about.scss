@@ -7,7 +7,7 @@
         background-image: url('../images/desktop/desktop-about-background.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100%;
+        background-size: auto;
         }
     
         @media (device-pixel-ratio: 2) , (resolution: 2dppx) , (resolution: 192dpi) and (min-width:$desktop) {
