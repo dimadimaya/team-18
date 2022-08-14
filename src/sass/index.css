@@ -123,8 +123,7 @@ body {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -156,21 +155,26 @@ body {
 }
 
 .section__header {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  background-color: var(--bgcHeader);
   z-index: 5;
   padding: 0;
   padding-top: 8px;
 }
 @media screen and (min-width: 768px) {
   .section__header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     padding-top: 29px;
   }
 }
 @media screen and (min-width: 1200px) {
   .section__header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     padding-top: 37px;
   }
 }
@@ -179,6 +183,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .container__header {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__header {
+    width: 1200px;
+  }
 }
 
 .header__logo {
@@ -421,11 +435,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero__section {
+    position: relative;
     height: 416px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__section {
+    position: relative;
     height: 664px;
   }
 }
@@ -472,10 +488,8 @@ body {
   left: 81px;
   width: 171px;
   height: 410px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 @media screen and (min-width: 768px) {
   .hero__top-icecream {
@@ -640,10 +654,8 @@ body {
 
 .hero__milk-img {
   display: none;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   flex-shrink: 0;
 }
 @media screen and (min-width: 768px) {
@@ -827,10 +839,8 @@ body {
 
 .hero__girl {
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   flex-shrink: 0;
 }
 @media screen and (max-width: 767px) {
@@ -969,7 +979,7 @@ body {
   height: 280px;
   background-image: url(../images/products/product-1_mobile.png);
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products-list .products-list__item:first-child::before {
     background-image: url(../images/products/product-1_mobile@2x.png);
   }
@@ -982,7 +992,7 @@ body {
     background-image: url(../images/products/product-1_tablet.png);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .products-list .products-list__item:first-child::before {
     background-image: url(../images/products/product-1_tablet@2x.png);
   }
@@ -995,7 +1005,7 @@ body {
     background-image: url(../images/products/product-1_tablet.png);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .products-list .products-list__item:first-child::before {
     background-image: url(../images/products/product-1_tablet@2x.png);
   }
@@ -1016,7 +1026,7 @@ body {
   height: 280px;
   background-image: url(../images/products/product-2_mobile.png);
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products-list .products-list__item:nth-child(2)::before {
     background-image: url(../images/products/product-2_mobile@2x.png);
   }
@@ -1029,7 +1039,7 @@ body {
     background-image: url(../images/products/product-2_tablet.png);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .products-list .products-list__item:nth-child(2)::before {
     background-image: url(../images/products/product-2_tablet@2x.png);
   }
@@ -1042,7 +1052,7 @@ body {
     background-image: url(../images/products/product-2_tablet.png);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .products-list .products-list__item:nth-child(2)::before {
     background-image: url(../images/products/product-2_tablet@2x.png);
   }
@@ -1063,7 +1073,7 @@ body {
   height: 280px;
   background-image: url(../images/products/product-3_mobile.png);
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .products-list .products-list__item:last-child::before {
     background-image: url(../images/products/product-3_mobile@2x.png);
   }
@@ -1076,7 +1086,7 @@ body {
     background-image: url(../images/products/product-3_tablet.png);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .products-list .products-list__item:last-child::before {
     background-image: url(../images/products/product-3_tablet@2x.png);
   }
@@ -1089,7 +1099,7 @@ body {
     background-image: url(../images/products/product-3_tablet.png);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .products-list .products-list__item:last-child::before {
     background-image: url(../images/products/product-3_tablet@2x.png);
   }
@@ -1132,7 +1142,7 @@ body {
   background-repeat: no-repeat;
   background-image: url(../images/products/product-dot.png);
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .product-card__title::after {
     background-image: url(../images/products/product-dot@2x.png);
   }
@@ -1166,8 +1176,7 @@ body {
   display: flex;
   top: 0;
   transition: transform 500ms linear;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .back {
@@ -1265,9 +1274,13 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 360px) {
+  .about__container {
+    max-width: 480px;
+  }
+}
 @media screen and (max-width: 767px) {
   .about__container {
-    width: 320px;
     background-image: url("../images/desktop/desktop-about-background.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -2288,23 +2301,7 @@ body {
 }
 
 .button-red:hover {
-  -webkit-animation: glowing 1300ms infinite;
-          animation: glowing 1300ms infinite;
-}
-
-@-webkit-keyframes glowing {
-  0% {
-    background-color: var(--bgcBtnDarkHover);
-    box-shadow: 0 0 3px var(--bgcBtnDarkHover);
-  }
-  50% {
-    background-color: var(--bgcBtnDark);
-    box-shadow: 0 0 15px var(--bgcBtnDark);
-  }
-  100% {
-    background-color: var(--bgcBtnDarkHover);
-    box-shadow: 0 0 3px var(--bgcBtnDarkHover);
-  }
+  animation: glowing 1300ms infinite;
 }
 
 @keyframes glowing {
@@ -2322,29 +2319,34 @@ body {
   }
 }
 .modal__close-btn {
-  -webkit-animation: pulsing 2s infinite;
-          animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
 }
 
 @-webkit-keyframes pulsing {
   0% {
+    -webkit-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5);
   }
   50% {
+    -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
   100% {
+    -webkit-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5);
   }
 }
 @keyframes pulsing {
   0% {
+    -webkit-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5);
   }
   50% {
+    -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
   100% {
+    -webkit-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5);
   }
 }
@@ -2701,20 +2703,6 @@ body {
     min-width: 250px;
   }
 }
-.form-field__input::-moz-placeholder {
-  font-size: 14px;
-  font-family: var(--fontPrimary), var(--fontSecondary);
-  line-height: 1.2;
-  letter-spacing: 0.05em;
-  color: var(--colorPrimary);
-}
-.form-field__input:-ms-input-placeholder {
-  font-size: 14px;
-  font-family: var(--fontPrimary), var(--fontSecondary);
-  line-height: 1.2;
-  letter-spacing: 0.05em;
-  color: var(--colorPrimary);
-}
 .form-field__input::placeholder {
   font-size: 14px;
   font-family: var(--fontPrimary), var(--fontSecondary);
@@ -2784,12 +2772,6 @@ body {
   border: var(--colorBlack);
   resize: none;
   height: 120px;
-}
-.modal-form__input--textarea::-moz-placeholder {
-  color: var(--colorBlack);
-}
-.modal-form__input--textarea:-ms-input-placeholder {
-  color: var(--colorBlack);
 }
 .modal-form__input--textarea::placeholder {
   color: var(--colorBlack);
