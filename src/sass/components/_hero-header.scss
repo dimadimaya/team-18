@@ -161,6 +161,7 @@
     &:hover,
     &:focus {
         fill: var(--colorPrimary);
+        scale: 120%;
     }
     
     @media screen and (min-width: 1200px) {
@@ -222,6 +223,7 @@
     &:hover,
     &:focus {
         background-color: var(--bgcBtnWhiteHover);
+        scale: 120%;
     }
 }
 
@@ -243,6 +245,7 @@
     &:hover,
     &:focus {
         background-color: var(--bgcBtnDarkHover);
+        scale: 120%;
     }
 }
 
@@ -470,6 +473,7 @@
     &:hover,
     &:focus {
         background-color: var(--bgcBtnDarkHover);
+        scale: 120%;
     }
 }
 
@@ -558,6 +562,7 @@
     &:focus {
             background-color: var(--bgcBtnDark);
             color: var(--colorWhite);
+            scale: 120%;
     }
 }
 
