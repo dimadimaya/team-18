@@ -296,6 +296,7 @@
     overflow: hidden;
     background-color: var(--bgcHeader);
     height: var(--menuMobileHeight);
+    margin-top: -0px;
 
     @media screen and (min-width: 768px) {
         position: relative;
