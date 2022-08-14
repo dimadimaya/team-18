@@ -7,6 +7,7 @@
     z-index: 100;
     background-color:var(--colorLine);
     opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
     transition: opacity var(--durationPrimary) var(--timingPrimary);
 }
 .franchise__backdrop.is-hidden {
