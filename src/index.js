@@ -11,4 +11,10 @@
     function toggleModal() {
       refs.modal.classList.toggle("is-hidden");
     }
-  })();
+})();
+  
+const buttons = document.querySelectorAll('.product-card button');
+buttons.forEach((btn) => btn.addEventListener('click', flipCard));
+function flipCard({ currentTarget }) {
+  currentTarget.closest('.products-list__wraper').classList.toggle('is-flipped');
+}
