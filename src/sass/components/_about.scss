@@ -294,7 +294,7 @@
             height: 100%;
             width: 100%;
             transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
+            max-width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -368,6 +368,7 @@
 
             @media screen and (min-width:$desktop) {
                 width: 490px;
+                margin-top: 60px;
             }
             
         }
@@ -394,12 +395,16 @@
                 margin-bottom: 75px;
             }
 
+            @media screen and (min-width:$desktop) {
+                margin-bottom: 0;
+            }
+
         }
 
         &__form {display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 32px;}
+            margin-top: 16px;}
     
         &__field-name {
             
@@ -419,12 +424,12 @@
             &:not(:first-child) {margin-top: 10px;}
 
             @media screen and (min-width:$tablet) {
-                font-size: 0.875rem;
+                font-size: 1.25rem;
                 line-height: 176%;
             }
 
             @media screen and (min-width:$desktop) {
-                font-size: 1rem;
+                font-size: 1.5rem;
                 line-height: 176%
             }
             
@@ -457,6 +462,7 @@
 
             @media screen and (min-width:$desktop) {
                 line-height: 194%;
+                height: 46px;
             }
 
             
