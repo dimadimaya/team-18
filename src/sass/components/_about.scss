@@ -97,6 +97,7 @@
         @media screen and (min-width:$tablet) {
             display: flex;
             flex-direction: row;
+            min-width: 704px;
             }   
 
         @media screen and (min-width:$desktop) {
@@ -116,8 +117,8 @@
             }
         
         @media screen and (min-width:$tablet) {
-            width: 336px;
-            height: 335px;
+            min-width: 336px;
+            max-height: 335px;
             margin-right: 32px;
             }
 
