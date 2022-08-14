@@ -1,4 +1,4 @@
-.modal-locations__close-btn {
+.modal__close-btn {
     animation: pulsing 2s infinite;
 }
 
@@ -55,6 +55,7 @@
     padding: 10px;
     border-radius: 10px;
     background-color: var(--bgcSection);
+    min-height: 175px;
 
 
     @media screen and (min-width: 450px) {
@@ -123,7 +124,7 @@
    
 }
 
-.modal-locations__close-btn {
+.modal__close-btn {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -149,7 +150,7 @@
     }
 }
 
-.modal-locations__close-btn-icon {
+.modal__close-btn-icon {
     display: block;
     margin: auto;
     fill: var(--bgcMenuMobile);
