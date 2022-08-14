@@ -7,8 +7,18 @@
         background-image: url('../images/desktop/desktop-about-background.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: auto;
+        background-size: 100%;
         }
+    
+        @media (device-pixel-ratio: 2) , (resolution: 2dppx) , (resolution: 192dpi) and (min-width:$desktop) {
+            background-image: url('../images/desktop/desktop-about-background@2x.png');
+        }
+    
+        @media (device-pixel-ratio: 3) , (resolution: 3dppx) , (resolution: 288dpi) and (min-width:$desktop) {
+            background-image: url('../images/desktop/desktop-about-background@3x.png');
+        }
+
+        @media screen and (max-width:1199px) { background-image: none;}
 
     &__container {
         max-width: 280px;
@@ -19,8 +29,7 @@
         @media screen and (min-width:360px) {
             max-width: 480px;
             }
-        
-        
+
         @media screen and (max-width:767px) {
             
             background-image: url('../images/desktop/desktop-about-background.png');
@@ -28,6 +37,16 @@
             background-position: center;
             background-size: 100%;
             }
+
+        @media (device-pixel-ratio: 2) , (resolution: 2dppx) , (resolution: 192dpi) and (max-width:767px) {
+            background-image: url('../images/desktop/desktop-about-background@2x.png');
+        }
+
+        @media (device-pixel-ratio: 3) , (resolution: 3dppx) , (resolution: 288dpi) and (max-width:767px) {
+            background-image: url('../images/desktop/desktop-about-background@3x.png');
+        }
+        
+        @media screen and (min-width:$tablet) { background-image: none;}
 
         @media screen and (min-width:$tablet) {
             width: 768px;
