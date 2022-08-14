@@ -1,3 +1,5 @@
+
+<header>
     <div class="header__backdrop-menu" data-menu-backdrop>
         <div id="menu" class="header__menu" data-menu>
             <button type="button" class="header__menu-button" data-menu-button-close>
@@ -14,70 +16,71 @@
             <nav>
                 <ul class="nav__menu-mobile">
                     <li class="nav__item-mobile nav__item-mobile--current">
-                        <a href="#" class="nav__link-mobile"> Home </a>
+                        <a href="./index.html" class="nav__link-mobile"> Home </a>
                     </li>
                     <li class="nav__item-mobile">
-                        <a href="#" class="nav__link-mobile">About us</a>
+                        <a href="#customer-reviews" class="nav__link-mobile">About us</a>
                     </li>
                     <li class="nav__item-mobile">
-                        <a href="#" class="nav__link-mobile">How it’s made?</a>
+                        <a href="#about" class="nav__link-mobile">How it’s made?</a>
                     </li>
                     <li class="nav__item-mobile">
-                        <a href="#" class="nav__link-mobile">Our products</a>
+                        <a href="#products" class="nav__link-mobile">Our products</a>
                     </li>
                     <li class="nav__item-mobile">
-                        <a href="#" class="nav__link-mobile">Contact</a>
+                        <a href="#contacts" class="nav__link-mobile">Contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
-<header class="section section__header">
-    <div class="container container__header">
-        <a href="/" class="header__link">
-            <svg class="header__logo">
-                <use href="./images/svg/icons.svg#icon-logo"></use>
-            </svg>
-        </a>
-        <div class="header__right">
-            <nav class="nav">
-                <ul class="nav__menu">
-                    <li class="nav__item nav__item--current">
-                        <a href="#" class="nav__link"> Home </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">About us</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">How it’s made?</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Our products</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <button
-                type="button"
-                class="header__menu-button"
-                aria-expanded="false"
-                aria-controls="menu"
-                data-menu-button
-            >
-                <svg class="header__menu-mobile" aria-label="mobile menu">
-                    <use href="./images/svg/icons.svg#icon-menu-mobile"></use>
+    <section class="section section__header">
+        <div class="container container__header">
+            <a href="/" class="header__link">
+                <svg class="header__logo">
+                    <use href="./images/svg/icons.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__item nav__item--current">
+                            <a href="./index.html" class="nav__link"> Home </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#customer-reviews" class="nav__link">About us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">How it’s made?</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Our products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contacts" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button
+                    type="button"
+                    class="header__menu-button"
+                    aria-expanded="false"
+                    aria-controls="menu"
+                    data-menu-button
+                >
+                    <svg class="header__menu-mobile" aria-label="mobile menu">
+                        <use href="./images/svg/icons.svg#icon-menu-mobile"></use>
+                    </svg>
+                </button>
+            </div>
+            <button class="button-white button-white--desktop">
+                Buy now
+                <svg class="button-white__icon">
+                    <use href="./images/svg/icons.svg#icon-arrow-more"></use>
                 </svg>
             </button>
         </div>
-        <button class="button-white button-white--desktop">
-            Buy now
-            <svg class="button-white__icon">
-                <use href="./images/svg/icons.svg#icon-arrow-more"></use>
-            </svg>
-        </button>
-    </div>
+    </section>
     <!-- hero section     -->
     <section class="section hero__section">
         <div class="container hero__container">
@@ -122,8 +125,8 @@
                 </picture>
             </div>
             <div class="hero__left-overlay">
-                <h1 class="heading-h2">
-                    <span class="hero__heading">ice cream made with</span><span class="hero__heading--accent">passion</span>
+                <h1 class="hero__heading">
+                    ice cream made with <span class="heading-h2 hero__heading--accent">passion</span>
                 </h1>
                 <ul class="hero__button-set">
                     <li class="hero__button-item">
@@ -225,3 +228,4 @@
     </section>
     <script src="./js/menu.js"></script>
 </header>
+
