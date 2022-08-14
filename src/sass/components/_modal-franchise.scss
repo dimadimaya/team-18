@@ -59,7 +59,7 @@
     
         &::placeholder {
             font-size: 14px;
-            // font-family: $fontSecondary, $fontSecondaryAlternative;
+            font-family: var(--fontPrimary),var(--fontSecondary); 
             line-height: 1.2;
             letter-spacing: 0.05em;
             color:var(--colorPrimary);
