@@ -26,7 +26,7 @@
   margin-top: 32px;
   margin: auto;
   width: 280px;
-  background: #fafafa;
+  background: var(--bgcQuote);
   z-index: 9;
   margin-top: 32px;
 
@@ -197,6 +197,6 @@
 }
 
 .slider .slick-dots .slick-active button {
-  background-color: red;
+  background-color: var(--bgcBtnDark);
   background-image: url(/src/images/png/home.png);
 }
