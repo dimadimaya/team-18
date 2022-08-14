@@ -12,7 +12,6 @@ body {
   position: fixed;
   width: 100%;
 }
-
 .section {
   max-width: 1600px;
   margin: 0 auto;
@@ -141,7 +140,6 @@ button {
     width: 1200px;
   }
 }
-
 .section__header {
   position: absolute;
   top: 0;
