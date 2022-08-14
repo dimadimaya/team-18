@@ -1,1 +1,51 @@
-about
+<!--about-->
+
+<section class="section about">
+  <div class="container about__container">
+    <b class="about__label">tradition and love</b>
+    <h2 class="about__title" id="about">how it’s made?</h2>
+    <div class="about__content">
+      <img class="about__img" 
+      srcset="./images/desktop/desktop-about-cow-and-milk@3x.png 3x, ./images/desktop/desktop-about-cow-and-milk@2x.png 2x" 
+      src="./images/desktop/desktop-about-cow-and-milk.png" 
+      alt="cow and milk" />
+      <div class="about__descr">
+          <ul class="about__descr-list">
+          <li class="about__descr-list-item"><p class="about__descr--fat">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p></li>
+          <li class="about__descr-list-item"><p class="about__descr--slim">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p></li>
+          <li class="about__descr-list-item"><p class="about__descr--slim">Aliquam erat volutpat. Aenean accumsan.</p></li>
+          </ul>
+          <button class="about__btn" type="button" data-modal-open>Read more</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-modal is-hidden" data-modal>
+    <div class="container about-modal__container">
+        <button type="button" class="about-modal__close-button" data-modal-close>
+            <svg class="about-modal__close-icon" aria-label="link mail" width="30" height="30">
+                <use href="./images/svg/icons.svg#icon-close-cross">
+            </svg>
+        </button> 
+        <h2 class="about__title about-modal__title">Need more information?</h2>
+        <p class="about__label about-modal__label">leave your contacts and we will send you all details!</p>
+
+        <form action="#" class="about-modal__form" name="main-form" data-netlify="true" id="form">
+          <label for="user-name" class="about-modal__field-name">Name
+              <input type="text" class="about-modal__field-input" id="user-name" name="user-name" required/>
+          </label>
+          <label for="user-phone" class="about-modal__field-name">Phone
+              <input type="tel" class="about-modal__field-input" id="user-phone" name="user-phone" required/>
+          </label>
+          <label for="user-email" class="about-modal__field-name">E-mail
+              <input type="email" class="about-modal__field-input" id="user-email" name="user-email" required/>
+          </label>
+
+          <button type="submit" class="about__btn about-modal__send-btn" id="send-btn">Send</button>
+      </form>
+      
+      
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+</section>

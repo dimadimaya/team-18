@@ -1,1 +1,74 @@
-rev
+<section class="reviews section" id="customer-reviews">
+  <div class="container">
+    <div class="slider">
+      <div class="reviews__slide">
+        <img
+          class="reviews__image"
+          srcset="/src/images/png/emily.png 1x, /src/images/png/emily@2x.png 2x"
+          src="/src/images/png/emily.png"
+          width="85px"
+          height="85px"
+          alt="foto"
+        />
+        <div class="reviews__thumb">
+          <p class="reviews__text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+            ipsum primis in nibh vel risus.
+          </p>
+          <div class="reviews__line"></div>
+        </div>
+        <h3 class="reviews__name">Emily, Los Angeles</h3>
+      </div>
+      <div class="reviews__slide">
+        <img
+          class="reviews__image"
+          srcset="/src/images/png/jane.png 1x, /src/images/png/jane@2x.png 2x"
+          src="/src/images/png/jane.png"
+          width="85px"
+          height="85px"
+          alt="foto"
+        />
+        <div class="reviews__thumb">
+          <p class="reviews__text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+            ipsum primis in nibh vel risus.
+          </p>
+          <div class="reviews__line"></div>
+        </div>
+        <h3 class="reviews__name">Monika, Colorado</h3>
+      </div>
+      <div class="reviews__slide">
+        <img
+          class="reviews__image"
+          srcset="/src/images/png/ann.png 1x, /src/images/png/ann@2x.png 2x"
+          src="/src/images/png/ann.png"
+          width="85px"
+          height="85px"
+          alt="foto"
+        />
+        <div class="reviews__thumb">
+          <p class="reviews__text">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+            ipsum primis in nibh vel risus.
+          </p>
+          <div class="reviews__line"></div>
+        </div>
+        <h3 class="reviews__name">Lisa, Texas</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+  $('.slider').slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+  });
+</script>
