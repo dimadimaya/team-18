@@ -7,8 +7,6 @@
     z-index: 5;
     padding: 0;
     padding-top: 8px;
-    max-width: 1600px;
-    background-color: var(--bgcHeader);
 
     @media screen and (min-width: 768px) {
         padding-top: 29px;
@@ -21,19 +19,9 @@
 
 .container__header {
     @include flex-pos(flex, space-between);
-    background-color: var(--bgcHeader);
 }
 
 .header__link {
-    // margin-left: 20px;
-
-    // @media screen and (min-width: 768px) {
-    //     margin-left: 32px;
-    // }
-
-    // @media screen and (min-width: 768px) {
-    //     margin-left: 56px;
-    // }
 }
 
 .header__logo {
@@ -63,7 +51,7 @@
 }
 
 .nav__item {
-    transition: color var(--durationPrimary) var(--timingPrimary);
+    transition: color var(--durationPrimary) var(--timingSecondary);
     
     & + & {
         margin-left: 35px;
@@ -81,7 +69,7 @@
     padding: 14px 0;
 }
 
-.header__menu-btn {
+.header__menu-button {
     background-color: transparent;
     cursor: pointer;
 }
@@ -102,13 +90,15 @@
 }
 
 .header__backdrop-menu {
-    visibility: hidden;
     position: absolute;
+    visibility: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     top: 0;
     left: 0;
     z-index: 10;
     width: 100vw;
-    height: var(--menuTabletHeight);
+    height: 100vh;
     background-color: var(--bgcBackDrop);
     transition: visibility var(--durationPrimary) var(--timingPrimary);
 }
@@ -146,7 +136,14 @@
     display: block;
     width: 14px;
     height: 14px;
+    fill: var(--colorWhite);
+    transition: fill var(--durationPrimary) var(--timingPrimary);
 
+    &:hover,
+    &:focus {
+        fill: var(--colorPrimary);
+    }
+    
     @media screen and (min-width: 1200px) {
         display: none;
     }
@@ -273,7 +270,7 @@
     overflow: hidden;
     background-color: var(--bgcHeader);
     height: 502px;
-    width: 1600px;
+    // width: 1600px;
 
     @media screen and (min-width: 768px) {
         height: 416px;
@@ -307,12 +304,14 @@
 
         top: 50%;
         left: 50%;
+
         transform: translate(-50%, -50%) translate(31px, 2px);
     }
 
     @media screen and (min-width: 1200px) {
         width: 534px;
         height: 534px;
+
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) translate(184px, -11px);
@@ -364,41 +363,28 @@
     }
 }
 
-.heading-h2 {
-    font-family: var(--fontSecondary), var(--fontSecondaryAlternative);
-    font-size: 48px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--colorWhite);
-    margin-bottom: 20px;
-    
-    @media screen and (min-width: 768px) {
-        margin-bottom: 20px;
-    }
-        
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 24px;
-    }
-}
-
 .hero__heading {
     display: block;
+    font-family: var(--fontSecondary), var(--fontSecondaryAlternative);
+    letter-spacing: 0.04em;
     font-size: 26px;
     line-height: 1.15;
     text-transform: uppercase;
     color: var(--colorWhite);
+    margin-bottom: 20px;
     width: 218px;
 
     @media screen and (min-width: 768px) {
         font-size: 22px;
         line-height: 1.14;
+        margin-bottom: 20px;
         width: 162px;
     }
 
     @media screen and (min-width: 1200px) {
         font-size: 38px;
         line-height: 1.16;
+        margin-bottom: 24px;
         width: 277px;
     }
 }
@@ -486,13 +472,13 @@
 .hero__milk {
     @include flex-pos(flex, start, stretch);
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         display: none;
     }
 }
 
 .hero__milk-img {
-    display: block;
+    display: none;
     object-fit: cover;
     object-position: center;
     flex-shrink: 0;
@@ -504,6 +490,7 @@
     }
 
     @media screen and (min-width: 1200px) {
+        display: block;
         width: 213px;
         height: 216px;
     }
@@ -536,17 +523,19 @@
 }
 
 .arrow-button {
-    // dispaly: block;
     @include flex-pos(flex, center, center);
+    width: 40px;
+    height: 40px;
     background-color: var(--colorWhite);
     color: var(--colorPrimary);
     border: none;
     border-radius: 50%;
-    transition: background-color var(--durationPrimary) var(--timingPrimary), color var(--durationPrimary) var(--timingPrimary);
+    cursor: pointer;
+    transition: background-color var(--durationPrimary) var(--timingSecondary), color var(--durationPrimary) var(--timingSecondary);
 
     &:hover,
     &:focus {
-            background-color: var(--colorPrimary);
+            background-color: var(--bgcBtnDark);
             color: var(--colorWhite);
     }
 }
@@ -582,7 +571,7 @@
     position: absolute;
     top: 94px;
     right: 50%;
-    transform: translateX(352px);
+    transform: translateX(calc(352px));
     text-align: right;
 
     @media screen and (max-width: 767px) {
@@ -687,7 +676,22 @@
     }
 }
 
+.heading-h2 {
+    font-family: var(--fontSecondary), var(--fontSecondaryAlternative);
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--colorPrimary);
 
+    @media screen and (min-width: 768px) {
+        font-size: 34px;
+        line-height: 0.91;
+    }
 
-
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 0.91;
+    }
+}
 
