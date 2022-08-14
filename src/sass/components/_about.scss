@@ -20,7 +20,9 @@
             max-width: 480px;
             }
         
+        
         @media screen and (max-width:767px) {
+            
             background-image: url('../images/desktop/desktop-about-background.png');
             background-repeat: no-repeat;
             background-position: center;
@@ -104,7 +106,15 @@
     &__img {
         height: 279px;
         width: 280px;
-
+    
+        @media screen and (min-width:360px) {
+            height: auto;
+            width: auto;
+            min-height: 279px;
+            min-width: 280px;
+            max-width: 320px;
+            }
+        
         @media screen and (min-width:$tablet) {
             width: 336px;
             height: 335px;
@@ -121,6 +131,10 @@
     &__descr {
         width: 13.75rem;
         margin-top: 40px;
+
+        @media screen and (min-width:360px) {
+            width: auto;
+            }
         
         @media screen and (min-width:$tablet) {
             width: 20.875rem;
@@ -174,6 +188,10 @@
         &-list {
             text-align: left;
             width: 13.75rem;
+
+        @media screen and (min-width:360px) {
+            width: auto;
+            }
 
         
         @media screen and (min-width:$tablet) {
