@@ -1,0 +1,2 @@
+(()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function t(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",t),e.closeModalBtn.addEventListener("click",t)})();function e({currentTarget:e}){e.closest(".products-list__wraper").classList.toggle("is-flipped")}document.querySelectorAll(".product-card button").forEach((t=>t.addEventListener("click",e)));
+//# sourceMappingURL=index.18ccb117.js.map
