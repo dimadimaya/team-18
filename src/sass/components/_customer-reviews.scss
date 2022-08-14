@@ -1,0 +1,202 @@
+.reviews {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 320px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.reviews__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews__thumb {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  margin-top: 32px;
+  margin: auto;
+  width: 280px;
+  background: var(--bgcQuote);
+  z-index: 9;
+  margin-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+    margin-top: 16px;
+  }
+}
+
+.reviews__thumb::before {
+  content: url(/src/images/png/brackets.png);
+  position: absolute;
+  display: block;
+  left: 53px;
+  top: 30px;
+  z-index: -1;
+
+  @media screen and (min-width: 768px) {
+    left: 6px;
+    top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 72px;
+    top: 32px;
+  }
+}
+.reviews__thumb::after {
+  content: '';
+  display: block;
+  background-image: url(/src/images/png/dots.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 4px;
+  position: absolute;
+  bottom: -16px;
+}
+.reviews__line {
+  margin: 74px 50px 17px;
+  width: 180px;
+  height: 217px;
+  background: repeating-linear-gradient(
+    rgba(225, 225, 225, 1) 1px,
+    transparent 3px 30px
+  );
+
+  @media screen and (min-width: 768px) {
+    width: 608px;
+    height: 62px;
+    margin-top: 68px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 821px;
+    height: 31px;
+    margin: 73px 31px 73px;
+  }
+}
+
+.reviews__text {
+  position: absolute;
+  margin: auto;
+  padding-top: 43px;
+  width: 157px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 514px;
+    padding-top: 37px;
+    font-size: 14px;
+    line-height: 2.16;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 750px;
+    padding-top: 47px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+.reviews__spot {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 4px;
+  }
+}
+
+.reviews__name {
+  font-size: 14px;
+  line-height: 1, 86;
+  text-align: center;
+  margin: 0;
+  margin-top: 32px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    padding-bottom: 32px;
+  }
+}
+
+.spot__item {
+  display: block;
+  width: 4px;
+  height: 4px;
+  margin-left: 10px;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-dots li {
+  width: 12px;
+  height: 12px;
+}
+
+// .slider .slick-arrow {
+//   display: none;
+// }
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  border-color: transparent;
+  color: #d9d9d9;
+  border-radius: 50%;
+}
+
+.slider .slick-dots .slick-active button {
+  background-color: var(--bgcBtnDark);
+  background-image: url(/src/images/png/home.png);
+}
