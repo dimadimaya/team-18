@@ -31,7 +31,7 @@
             }   
 
         @media screen and (min-width:$desktop) {
-            width: 1200px;
+            max-width: 1200px;
             }
     }
 
@@ -95,7 +95,7 @@
             }   
 
         @media screen and (min-width:$desktop) {
-            
+            width: 1168px;
             }
     }
 
