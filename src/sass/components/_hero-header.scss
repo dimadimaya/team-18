@@ -27,11 +27,16 @@
 }
 
 .container__header {
+
     @include flex-pos(flex, space-between);
 
-    // @media screen and (min-width: 1200px) {
-    //     @include flex-pos(flex, space-between);
-    // }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .header__link {
@@ -287,10 +292,12 @@
     // width: 1600px;
 
     @media screen and (min-width: 768px) {
+        position: relative;
         height: 416px;
     }
 
     @media screen and (min-width: 1200px) {
+        position: relative;
         height: 664px;
     }
 }
