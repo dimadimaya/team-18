@@ -19,9 +19,14 @@
 
 .container__header {
     @include flex-pos(flex, space-between);
+
+    @media screen and (min-width: 1200px) {
+        @include flex-pos(flex, space-between);
+    }
 }
 
 .header__link {
+
 }
 
 .header__logo {

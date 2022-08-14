@@ -167,6 +167,13 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 .header__logo {
   display: block;
