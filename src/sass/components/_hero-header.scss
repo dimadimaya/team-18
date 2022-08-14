@@ -133,7 +133,7 @@
 .header__menu {
     position: absolute;
     top: 0;
-    left: calc(100vw - 18px);
+    left: 100vw;
     z-index: 20;
     width: var(--menuMobileWidth);
     height: var(--menuTabletHeight);
