@@ -162,8 +162,6 @@ body {
   z-index: 5;
   padding: 0;
   padding-top: 8px;
-  max-width: 1600px;
-  background-color: var(--bgcHeader);
 }
 @media screen and (min-width: 768px) {
   .section__header {
@@ -180,7 +178,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bgcHeader);
+}
+@media screen and (min-width: 1200px) {
+  .container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .header__logo {
@@ -214,7 +218,7 @@ body {
 }
 
 .nav__item {
-  transition: color var(--durationPrimary) var(--timingPrimary);
+  transition: color var(--durationPrimary) var(--timingSecondary);
 }
 .nav__item + .nav__item {
   margin-left: 35px;
@@ -228,7 +232,7 @@ body {
   padding: 14px 0;
 }
 
-.header__menu-btn {
+.header__menu-button {
   background-color: transparent;
   cursor: pointer;
 }
@@ -250,13 +254,15 @@ body {
 }
 
 .header__backdrop-menu {
-  visibility: hidden;
   position: absolute;
+  visibility: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   top: 0;
   left: 0;
   z-index: 10;
   width: 100vw;
-  height: var(--menuTabletHeight);
+  height: 100vh;
   background-color: var(--bgcBackDrop);
   transition: visibility var(--durationPrimary) var(--timingPrimary);
 }
@@ -293,6 +299,11 @@ body {
   display: block;
   width: 14px;
   height: 14px;
+  fill: var(--colorWhite);
+  transition: fill var(--durationPrimary) var(--timingPrimary);
+}
+.header__menu-close:hover, .header__menu-close:focus {
+  fill: var(--colorPrimary);
 }
 @media screen and (min-width: 1200px) {
   .header__menu-close {
@@ -413,7 +424,6 @@ body {
   overflow: hidden;
   background-color: var(--bgcHeader);
   height: 502px;
-  width: 1600px;
 }
 @media screen and (min-width: 768px) {
   .hero__section {
@@ -512,38 +522,22 @@ body {
   }
 }
 
-.heading-h2 {
-  font-family: var(--fontSecondary), var(--fontSecondaryAlternative);
-  font-size: 48px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--colorWhite);
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 768px) {
-  .heading-h2 {
-    margin-bottom: 20px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .heading-h2 {
-    margin-bottom: 24px;
-  }
-}
-
 .hero__heading {
   display: block;
+  font-family: var(--fontSecondary), var(--fontSecondaryAlternative);
+  letter-spacing: 0.04em;
   font-size: 26px;
   line-height: 1.15;
   text-transform: uppercase;
   color: var(--colorWhite);
+  margin-bottom: 20px;
   width: 218px;
 }
 @media screen and (min-width: 768px) {
   .hero__heading {
     font-size: 22px;
     line-height: 1.14;
+    margin-bottom: 20px;
     width: 162px;
   }
 }
@@ -551,6 +545,7 @@ body {
   .hero__heading {
     font-size: 38px;
     line-height: 1.16;
+    margin-bottom: 24px;
     width: 277px;
   }
 }
@@ -643,18 +638,16 @@ body {
   justify-content: start;
   align-items: stretch;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .hero__milk {
     display: none;
   }
 }
 
 .hero__milk-img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  display: none;
+  object-fit: cover;
+  object-position: center;
   flex-shrink: 0;
 }
 @media screen and (min-width: 768px) {
@@ -666,6 +659,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__milk-img {
+    display: block;
     width: 213px;
     height: 216px;
   }
@@ -703,14 +697,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+  height: 40px;
   background-color: var(--colorWhite);
   color: var(--colorPrimary);
   border: none;
   border-radius: 50%;
-  transition: background-color var(--durationPrimary) var(--timingPrimary), color var(--durationPrimary) var(--timingPrimary);
+  cursor: pointer;
+  transition: background-color var(--durationPrimary) var(--timingSecondary), color var(--durationPrimary) var(--timingSecondary);
 }
 .arrow-button:hover, .arrow-button:focus {
-  background-color: var(--colorPrimary);
+  background-color: var(--bgcBtnDark);
   color: var(--colorWhite);
 }
 
@@ -858,6 +855,27 @@ body {
     width: 304px;
     height: 241px;
     margin-top: 103px;
+  }
+}
+
+.heading-h2 {
+  font-family: var(--fontSecondary), var(--fontSecondaryAlternative);
+  font-size: 48px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--colorPrimary);
+}
+@media screen and (min-width: 768px) {
+  .heading-h2 {
+    font-size: 34px;
+    line-height: 0.91;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heading-h2 {
+    font-size: 58px;
+    line-height: 0.91;
   }
 }
 
