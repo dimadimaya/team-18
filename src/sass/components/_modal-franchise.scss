@@ -22,7 +22,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 320px;
+  max-width: 380px;
 
   padding: 20px;
   min-width: 280px;
@@ -81,11 +81,14 @@
   @media screen and(min-width:768px) {
     font-size: 25px;
   }
-}
 
-.modal__close-btn {
+  @media screen and(min-width:1200px) {
+    font-size: 35px;
+  }
+}
+.modal__close-btn--franchise {
   position: absolute;
-  top: 35px;
+  top: 37px;
   right: 15px;
 
   display: flex;
