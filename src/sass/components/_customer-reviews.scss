@@ -1,7 +1,4 @@
 .reviews {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 350px;
 
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -23,9 +20,9 @@
   justify-content: center;
   position: relative;
   text-align: center;
+  width: 280px;
   margin-top: 32px;
   margin: auto;
-  width: 280px;
   background: var(--bgcQuote);
   z-index: 9;
   margin-top: 32px;
@@ -41,24 +38,21 @@
   }
 }
 
-.reviews__thumb::before {
+.reviews__line::before {
   content: url(/src/images/png/brackets.png);
   position: absolute;
   display: block;
-  left: 53px;
-  top: 30px;
+  left: 0;
+  top: -4px;
+  transform: translateY(-100%);
   z-index: -1;
 
-  @media screen and (min-width: 768px) {
-    left: 6px;
-    top: 20px;
+  @media screen and (min-width: 768px) and (max-width:1199px) {
+    top: -8px;
   }
 
-  @media screen and (min-width: 1200px) {
-    left: 72px;
-    top: 32px;
-  }
 }
+
 .reviews__thumb::after {
   content: '';
   display: block;
@@ -71,25 +65,27 @@
   position: absolute;
   bottom: -16px;
 }
+
 .reviews__line {
   margin: 74px 50px 17px;
   width: 180px;
   height: 217px;
+  position:relative;
   background: repeating-linear-gradient(
     rgba(225, 225, 225, 1) 1px,
-    transparent 3px 30px
+    transparent 2px 30px
   );
 
   @media screen and (min-width: 768px) {
     width: 608px;
     height: 62px;
-    margin-top: 68px;
+    margin: 68px 6px 36px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 821px;
     height: 31px;
-    margin: 73px 31px 73px;
+    margin: 73px 74px 31px;
   }
 }
 
@@ -197,6 +193,7 @@
 }
 
 .slider .slick-dots .slick-active button {
-  background-color: var(--bgcBtnDark);
+  background-color: transparent;
+  border-radius: unset;
   background-image: url(/src/images/png/home.png);
 }
