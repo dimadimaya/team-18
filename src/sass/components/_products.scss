@@ -1,59 +1,57 @@
-.products__label{
-    margin-bottom: 15px;
-    font-family: var(--fontSecondary);
-    font-size: 18px;
-    line-height: 1.17;
-    text-transform: uppercase;
-    
-    color: var(--colorOverline);
+.products__label {
+  margin-bottom: 15px;
+  font-family: var(--fontSecondary);
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
 
-    @media screen and (min-width:$tablet) {
+  color: var(--colorOverline);
+
+  @media screen and (min-width: $tablet) {
     margin-bottom: 18px;
     font-size: 26px;
     line-height: 1.15;
-    }
+  }
 
-    @media screen and (min-width:$desktop) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 16px;
     font-size: 30px;
     ine-height: 1.13;
-        }
-
+  }
 }
-.products__title{
-    margin-bottom: 8px;
-    font-family: var(--fontSecondary);
-    font-size: 34px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    
-    color: var(--colorPrimary);
+.products__title {
+  margin-bottom: 8px;
+  font-family: var(--fontSecondary);
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    @media screen and (min-width:$tablet) {
+  color: var(--colorPrimary);
+
+  @media screen and (min-width: $tablet) {
     margin-bottom: 20px;
     font-size: 48px;
-    
-        }
-    
-    @media screen and (min-width:$desktop) {
+  }
+
+  @media screen and (min-width: $desktop) {
     margin-bottom: 16px;
     font-size: 58px;
     letter-spacing: 0.06em;
-        }
+  }
 }
 
-.products-list{
-    @media screen and (min-width:$tablet) {
-            display: flex;
-            gap: 16px;
-        }
+.products-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 16px;
+  }
 
-    @media screen and (min-width:$desktop) {
-     gap: 32px;
-}
+  @media screen and (min-width: $desktop) {
+    gap: 32px;
+  }
 
-.products-list__item{
+  .products-list__item {
     // position: relative;
     width: 100%;
     text-align: left;
@@ -63,198 +61,235 @@
     height: 489px;
     border-radius: 24px;
 
-
-
-@media screen and (min-width:$tablet) {
-    height: 473px;
-    margin-top: 138px;
+    @media screen and (min-width: $tablet) {
+      height: 473px;
+      margin-top: 138px;
     }
 
-@media screen and (min-width:$desktop) {
-    height: 535px;
-    margin-top: 261px;
-   
+    @media screen and (min-width: $desktop) {
+      height: 535px;
+      margin-top: 261px;
+    }
+
+    &:first-child {
+      //   background-color: #ffb8ca;
+      background: linear-gradient(45deg, #ffb8ca, #ed7996, #ffffff);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+
+      @keyframes gradient {
+        0% {
+          background-position: 0 50%;
         }
-    
-    
-&:first-child{
-    background-color: #FFB8CA;
-    &::before {
-            
-            position: absolute;
-            top: -140px;
-            left: 50%;
-            transform: translateX(-50%);
-            content: " ";
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 280px;
-            height: 280px;
-            background-image: url(../images/products/product-1_mobile.png);
-    
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/products/product-1_mobile@2x.png);
-            }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0 50%;
+        }
+      }
+      &::before {
+        position: absolute;
+        top: -140px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: ' ';
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 280px;
+        height: 280px;
+        background-image: url(../images/products/product-1_mobile.png);
 
-         @media screen and (min-width:$tablet){
-            width: 224px;
-            height: 224px;
-            top: -138px;
-            background-image: url(../images/products/product-1_tablet.png);
-            
-                @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    background-image: url(../images/products/product-1_tablet@2x.png);
-                }
-         }
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/products/product-1_mobile@2x.png);
+        }
 
-            @media screen and (min-width:$desktop) {
-             width: 368px;
-            height: 394px;
-            top: -261px;
-            background-image: url(../images/products/product-1_tablet.png);
-        
-            @media (min-device-pixel-ratio: 2),
+        @media screen and (min-width: $tablet) {
+          width: 224px;
+          height: 224px;
+          top: -138px;
+          background-image: url(../images/products/product-1_tablet.png);
+
+          @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
             background-image: url(../images/products/product-1_tablet@2x.png);
-                      }
-                  }
+          }
         }
-    }
-&:nth-child(2){
-    background-color: var(--bgcColorBeige);
-    &::before {
-            position: absolute;
-            top: -140px;
-            left: 50%;
-            transform: translateX(-50%);
-            content: " ";
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 280px;
-            height: 280px;
-            background-image: url(../images/products/product-2_mobile.png);
-    
-            @media (min-device-pixel-ratio: 2),
+
+        @media screen and (min-width: $desktop) {
+          width: 368px;
+          height: 394px;
+          top: -261px;
+          background-image: url(../images/products/product-1_tablet.png);
+
+          @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url(../images/products/product-2_mobile@2x.png);
-            }
+            background-image: url(../images/products/product-1_tablet@2x.png);
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      //   background-color: var(--bgcColorBeige);
+      background: linear-gradient(45deg, #f0d1a5, #eba23b, #ffffff);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
 
-             @media screen and (min-width:$tablet) {
-                width: 224px;
-                height: 224px;
-                top: -138px;
-            background-image: url(../images/products/product-2_tablet.png);
-            
-             @media (min-device-pixel-ratio: 2),
+      @keyframes gradient {
+        0% {
+          background-position: 0 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0 50%;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        top: -140px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: ' ';
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 280px;
+        height: 280px;
+        background-image: url(../images/products/product-2_mobile.png);
+
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/products/product-2_mobile@2x.png);
+        }
+
+        @media screen and (min-width: $tablet) {
+          width: 224px;
+          height: 224px;
+          top: -138px;
+          background-image: url(../images/products/product-2_tablet.png);
+
+          @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
             background-image: url(../images/products/product-2_tablet@2x.png);
-                              }
-                          }
-            @media screen and (min-width:$desktop) {
-            width: 368px;
-            height: 394px;
-            top: -261px;
-            background-image: url(../images/products/product-2_tablet.png);
-            @media (min-device-pixel-ratio: 2),
+          }
+        }
+        @media screen and (min-width: $desktop) {
+          width: 368px;
+          height: 394px;
+          top: -261px;
+          background-image: url(../images/products/product-2_tablet.png);
+          @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url(../images/products/product-2_tablet@2x.png);
-                            }
-                        }
+            background-image: url(../images/products/product-2_tablet@2x.png);
+          }
         }
+      }
     }
 
-&:last-child{
-    background-color: var(--bgcColorLightGreen);
-    &::before {
-            position: absolute;
-            top: -140px;
-            left: 50%;
-            transform: translateX(-50%);
-            content: " ";
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 280px;
-            height: 280px;
-            background-image: url(../images/products/product-3_mobile.png);
-    
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/products/product-3_mobile@2x.png);
-            }
+    &:last-child {
+      //   background-color: var(--bgcColorLightGreen);
+      background: linear-gradient(45deg, #c2e297, #9adc45, #ffffff);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
 
-            @media screen and (min-width:$tablet) {
-            width: 224px;
-            height: 224px;
-            top: -138px;
-            background-image: url(../images/products/product-3_tablet.png);
-            
-            @media (min-device-pixel-ratio: 2),
+      @keyframes gradient {
+        0% {
+          background-position: 0 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0 50%;
+        }
+      }
+      &::before {
+        position: absolute;
+        top: -140px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: ' ';
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 280px;
+        height: 280px;
+        background-image: url(../images/products/product-3_mobile.png);
+
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/products/product-3_mobile@2x.png);
+        }
+
+        @media screen and (min-width: $tablet) {
+          width: 224px;
+          height: 224px;
+          top: -138px;
+          background-image: url(../images/products/product-3_tablet.png);
+
+          @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
             background-image: url(../images/products/product-3_tablet@2x.png);
-                }
-                }
-            @media screen and (min-width:$desktop) {
-            width: 368px;
-            height: 394px;
-            top: -261px;
-            background-image: url(../images/products/product-3_tablet.png);
-            
-            @media (min-device-pixel-ratio: 2),
+          }
+        }
+        @media screen and (min-width: $desktop) {
+          width: 368px;
+          height: 394px;
+          top: -261px;
+          background-image: url(../images/products/product-3_tablet.png);
+
+          @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
             background-image: url(../images/products/product-3_tablet@2x.png);
-                }
-            }
-
+          }
         }
+      }
     }
+  }
+}
 
+.product-card__title {
+  padding-top: 160px;
+  margin-top: 20px;
+  margin-bottom: 32px;
+  font-family: var(--fontSecondary);
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
 
-}}
-
-.product-card__title{
-   
-    padding-top: 160px;
-    margin-top: 20px;
-    margin-bottom: 32px;
-    font-family: var(--fontSecondary);
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-
-
-    @media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     margin-top: 32px;
     padding-top: 86px;
-    }
+  }
 
-    @media screen and (min-width:$desktop) {
+  @media screen and (min-width: $desktop) {
     font-size: 30px;
     padding-top: 133px;
-        }
+  }
 
-    &::after{
+  &::after {
     display: flex;
-   margin-right: auto;
-   margin-left: auto;
-   margin-top: 32px;
-    content: "";
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 32px;
+    content: '';
     width: 26px;
     height: 6px;
     background-size: contain;
@@ -262,118 +297,130 @@
     background-repeat: no-repeat;
     background-image: url(../images/products/product-dot.png);
     @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/products/product-dot@2x.png);
-        };
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/product-dot@2x.png);
     }
+  }
 }
-.product-card{
-    display: flex;
-    flex-direction: column;
-    
-    padding-left: 41px;
-    padding-right: 39px;
+.product-card {
+  display: flex;
+  flex-direction: column;
 
-@media screen and (min-width:($tablet)) {
+  padding-left: 41px;
+  padding-right: 39px;
+
+  @media screen and (min-width: ($tablet)) {
     padding-left: 32px;
     padding-right: 32px;
-    }
+  }
 
-@media screen and (min-width:($desktop)) {
+  @media screen and (min-width: ($desktop)) {
     padding-left: 64px;
     padding-right: 63px;
-        }
-    }
+  }
+}
 .front,
 .back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    display: flex;
-    top: 0;
-    transition: transform 500ms linear;
-    backface-visibility: hidden;
-    
-        }
-    
- .back {
-    transform: rotateY(180deg);
-        };
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  display: flex;
+  top: 0;
+  transition: transform 750ms linear;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
 
 .products-list__wraper.is-flipped .front {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .products-list__wraper.is-flipped .back {
-    transform: rotateY(360deg);
+  transform: rotateY(360deg);
 }
 
-.product-card{
-    &__item{
+.product-card {
+  &__item {
     display: flex;
     padding: 7px 0;
     justify-content: space-between;
     text-align: left;
-    }
+  }
 
-    &__name{
+  &__name {
     margin: 0;
     font-size: 18px;
     color: var(--colorPrimary);
-    }
+  }
 
-    &__price{
+  &__price {
     font-size: 20px;
     color: var(--bgcBtnWhite);
-    }
+  }
 
-    &__text{
-font-family: var(--fontPrimary);
+  &__text {
+    font-family: var(--fontPrimary);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
     letter-spacing: 0.04em;
 
-    color: #FFFFFF;
+    color: #ffffff;
 
-    @media screen and (min-width:($tablet)) {
-        line-height: 1.76;
+    @media screen and (min-width: ($tablet)) {
+      line-height: 1.76;
     }
 
-    @media screen and (min-width:($desktop)) {
-        font-size: 16px;
+    @media screen and (min-width: ($desktop)) {
+      font-size: 16px;
     }
-    }
+  }
 }
 
-
-.product-card__text-mobile{
-    @media screen and (min-width:$tablet) {
-        display: none;
-    }
+.product-card__text-mobile {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .product-card__btn {
-    @include flex-pos ();
-    margin-top: 32px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    outline: none;
-    background-color: var(--bgcBtnWhite);
+  @include flex-pos();
+  margin-top: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: none;
+  background-color: var(--bgcBtnWhite);
 
-    @media screen and (min-width:($desktop)) {
+  @media screen and (min-width: ($desktop)) {
     margin-top: 60px;
-        }
+  }
+  transition: background-color var(--durationSecondary)
+      cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow var(--durationSecondary) cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:hover,
+  &:focus {
+    background-color: var(--bgcBtnDark);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .product-card__icon,
+  &:focus .product-card__icon {
+    fill: var(--bgcBtnWhite);
+  }
 }
 
-.product-card__icon{
+.product-card__icon {
   fill: var(--colorPrimary);
+  transition: fill var(--durationSecondary) cubic-bezier(0.4, 0, 0.2, 1);
 }
-
