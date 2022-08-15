@@ -119,7 +119,8 @@
     z-index: 10;
     margin: 0;
     padding: 0;
-    width: calc(100vw - 17px);
+    width: 100vw;
+    opacity: 0;
     height: var(--menuTabletHeight);
     background-color: var(--bgcBackDrop);
     transition: visibility var(--durationPrimary) var(--timingPrimary);
@@ -127,18 +128,20 @@
 
 .header__backdrop-menu.is-open {
     visibility: visible;
+    opacity: 1;
 }
 
 .header__menu {
     position: absolute;
     top: 0;
+    right: 0;
     left: 100vw;
     z-index: 15;
     width: var(--menuMobileWidth);
     height: var(--menuTabletHeight);
     overflow: hidden;
     background-color: var(--bgcMenuMobile);
-    // box-shadow: var(--shadowMenuMobile);
+    box-shadow: var(--shadowMenuMobile);
     transform: translateX(0);
     opacity: 0;
 
