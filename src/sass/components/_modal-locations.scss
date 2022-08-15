@@ -1,159 +1,145 @@
 .modal__close-btn {
-    animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
 }
 
 @-webkit-keyframes pulsing {
-    0% {
-        -webkit-transform: scale(0.5, 0.5);
-        transform: scale(0.5, 0.5)
-    }
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
 
-    50% {
-        -webkit-transform: scale(1.0, 1.0);
-        transform: scale(1.0, 1.0);
-    }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
 
-    100% {
-        -webkit-transform: scale(0.5, 0.5);
-        transform: scale(0.5, 0.5);
-    }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
 }
 
 @keyframes pulsing {
-    0% {
-        -webkit-transform: scale(0.5, 0.5);
-        transform: scale(0.5, 0.5)
-    }
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
 
-    50% {
-        -webkit-transform: scale(1.0, 1.0);
-        transform: scale(1.0, 1.0);
-    }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
 
-    100% {
-        -webkit-transform: scale(0.5, 0.5);
-        transform: scale(0.5, 0.5);
-    }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
 }
 
-
-
 .is-hidden {
-    .modal-locations {
-        transform: translate(-50%, -50%) scale(0.1);
-
-    }
+  .modal-locations {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
 }
 .modal-locations__map,
 .modal-locations {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--durationPrimary) var(--timingPrimary);
-    padding: 10px;
-    border-radius: 10px;
-    background-color: var(--bgcSection);
-    min-height: 175px;
+  width: 100%;
 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--durationPrimary) var(--timingPrimary);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--bgcSection);
+  min-height: 175px;
 
-    @media screen and (min-width: 450px) {
-        & {
-            width: 450px;
-            height: 450px;
-        }
+  @media screen and (min-width: 450px) {
+    & {
+      width: 450px;
+      height: 450px;
     }
+  }
 
-    @media screen and (min-width: 1200px) {
-        & {
-            width: 528px;
-            height: 528px;
-        }
+  @media screen and (min-width: 1200px) {
+    & {
+      width: 528px;
+      height: 528px;
     }
+  }
 }
 
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    transition: opacity var(--durationPrimary) var(--timingPrimary);
-    border: none;
-    border-radius:20px;
-
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity var(--durationPrimary) var(--timingPrimary);
+  border: none;
+  border-radius: 20px;
 }
 
 .is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    
+  opacity: 0;
+  pointer-events: none;
 }
 
 .backdrop.is-hidden .modal-locations {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%) scale(0.2);
-    opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%) scale(0.2);
+  opacity: 0;
 }
-// .backdrop {
-//     body {
-//             height: 100vh;
-//             overflow-y: hidden;
-//         }
-// }
 
 .backdrop .modal-locations {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    background-color: var(--colorDescription);
-    
-   
-    padding: 0;
-    max-height: 90vh;
-    transition: opacity var(--durationPrimary) var(--timingPrimary), transform var(--durationPrimary) var(--timingPrimary);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  background-color: var(--colorDescription);
 
-   
+  padding: 0;
+  max-height: 90vh;
+  transition: opacity var(--durationPrimary) var(--timingPrimary),
+    transform var(--durationPrimary) var(--timingPrimary);
 }
 
 .modal__close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 
-    border-radius: 50%;
-    background-color: var(--bgcBtnDark);
-    border: 2px solid var(--bgcBtnDar);
-    cursor: pointer;
-    z-index: 100;
+  border-radius: 50%;
+  background-color: var(--bgcBtnDark);
+  border: 2px solid var(--bgcBtnDar);
+  cursor: pointer;
+  z-index: 100;
 
-    &:hover,
-    &:focus {
-        background-color: var(--bgcBtnDarkHover);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--bgcBtnDarkHover);
+  }
 }
 
 .modal__close-btn-icon {
-    display: block;
-    margin: auto;
-    fill: var(--bgcMenuMobile);
-    transition: fill var(--durationPrimary) var(--timingPrimary);
-    z-index: 100;
+  display: block;
+  margin: auto;
+  fill: var(--bgcMenuMobile);
+  transition: fill var(--durationPrimary) var(--timingPrimary);
+  z-index: 100;
 }
