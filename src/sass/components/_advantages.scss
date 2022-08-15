@@ -7,18 +7,22 @@
     display: flex;
     gap: 12px;
     text-align: left;
+    gap: 90px;
   }
   @media screen and (min-width: $desktop) {
     gap: 90px;
   }
 }
 
-// .advantages__item {
-//   max-width: 170px;
-//   @media screen and (min-width: $desktop) {
-//     max-width: 300px;
-//   }
-// }
+.advantages__item {
+  @media screen and (min-width: $tablet) {
+    width: 215px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 320px;
+    gap: 100px;
+  }
+}
 
 .advantages__item:not(:last-child) {
   @media screen and (max-width: 767px) {
@@ -54,7 +58,6 @@
   line-height: 1.7;
   color: var(--colorBlack);
   @media screen and (min-width: $tablet) {
-    width: 170px;
     font-size: 14px;
   }
   @media screen and (min-width: $desktop) {
