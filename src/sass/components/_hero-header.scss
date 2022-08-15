@@ -113,8 +113,7 @@
 .header__backdrop-menu {
     position: absolute;
     visibility: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
     top: 0;
     left: 0;
     z-index: 10;
@@ -134,12 +133,12 @@
     position: absolute;
     top: 0;
     left: 100vw;
-    z-index: 20;
+    z-index: 15;
     width: var(--menuMobileWidth);
     height: var(--menuTabletHeight);
     overflow: hidden;
     background-color: var(--bgcMenuMobile);
-    box-shadow: var(--shadowMenuMobile);
+    // box-shadow: var(--shadowMenuMobile);
     transform: translateX(0);
     opacity: 0;
 
@@ -160,7 +159,7 @@
     width: 14px;
     height: 14px;
     fill: var(--colorWhite);
-    transition: fill var(--durationPrimary) var(--timingPrimary);
+    transition: fill var(--durationPrimary) var(--timingPrimary), scale var(--durationSecondary) var(--timingSecondary);
 
     &:hover,
     &:focus {
@@ -222,7 +221,7 @@
     border-radius: 20px;
     cursor: pointer;
 
-    transition: background-color var(--durationPrimary) var(--durationPrimary);
+    transition: background-color var(--durationPrimary) var(--durationPrimary), scale var(--durationSecondary) var(--timingSecondary);
 
     &:hover,
     &:focus {
@@ -244,7 +243,8 @@
     border-radius: 20px;
     cursor: pointer;
 
-    transition: background-color var(--durationPrimary) var(--durationPrimary);
+    transition: background-color var(--durationPrimary) var(--durationPrimary),
+        scale var(--durationSecondary) var(--timingSecondary);
 
     &:hover,
     &:focus {
@@ -371,6 +371,50 @@
     }
 }
 
+.animate-icecream {
+    animation: none;
+
+    &:hover {
+        animation: animate_icecream 1s infinite;
+    }
+    
+    @keyframes animate_icecream {
+        0% {
+            transform: scale3d(1, 1, 1);
+        }
+        10% {
+            transform: scale3d(1.03, 1.03, 1.03);
+        }
+        20% {
+            transform: scale3d(1.06, 1.06, 1.06);
+        }
+        30% {
+            transform: scale3d(1.09, 1.09, 1.09);
+        }
+        40% {
+            transform: scale3d(1.12, 1.12, 1.12);
+        }
+        50% {
+            transform: scale3d(1.15, 1.15, 1.15);
+        }
+        60% {
+            transform: scale3d(1.12, 1.12, 1.12);
+        }
+        70% {
+            transform: scale3d(1.09, 1.09, 1.09);
+        }
+        80%{
+            transform: scale3d(1.06, 1.06, 1.06);
+        }
+        90%{
+            transform: scale3d(1.03, 1.03, 1.03);
+        }
+        100% {
+            transform: scale3d(1, 1, 1);
+        }
+    }
+}
+
 .hero__left-overlay {
     position: absolute;
     top: 194px;
@@ -472,7 +516,7 @@
         height: 40px;
     }
 
-    transition: background-color var(--durationPrimary) var(--timingPrimary);
+    transition: background-color var(--durationPrimary) var(--timingPrimary), scale var(--durationSecondary) var(--timingSecondary);
 
     &:hover,
     &:focus {
@@ -525,6 +569,60 @@
     }
 }
 
+.animate-milk {
+    animation: none;
+
+    &:hover {
+        animation: animate_milk 1s infinite;
+    }
+
+    @keyframes animate_milk {
+        0% {
+            transform: rotateZ(25deg);
+        }
+
+        10% {
+            transform: rotateZ(-25deg);
+        }
+
+        20% {
+            transform: rotateZ(20deg);
+        }
+
+        30% {
+            transform: rotateZ(-20deg);
+        }
+
+        40% {
+            transform: rotateZ(15deg);
+        }
+
+        50% {
+            transform: rotateZ(-15deg);
+        }
+
+        60% {
+            transform: rotateZ(10deg);
+        }
+
+        70% {
+            transform: rotateZ(-10deg);
+        }
+
+        80% {
+            transform: rotateZ(5deg);
+        }
+
+        90% {
+            transform: rotateZ(-5deg);
+        }
+
+        100% {
+            transform: rotateZ(0deg);
+        }
+    }
+}
+
 .hero__milk-description {
     padding-top: 41px;
     font-size: 8;
@@ -560,7 +658,8 @@
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color var(--durationPrimary) var(--timingSecondary), color var(--durationPrimary) var(--timingSecondary);
+    transition: background-color var(--durationPrimary) var(--timingSecondary), color var(--durationPrimary) var(--timingSecondary),
+        scale var(--durationSecondary) var(--timingSecondary);
 
     &:hover,
     &:focus {
@@ -703,6 +802,103 @@
         width: 304px;
         height: 241px;
         margin-top: 103px;
+    }
+}
+
+.animate-girl {
+    animation: none;
+
+    &:hover {
+        animation: animate_girl 1s infinite;
+    }
+        @keyframes animate_girl {
+            0% {
+                transform: scale(1);
+            }
+    
+            10% {
+                transform: scale(1.03);
+            }
+    
+            20% {
+                transform: scale(1.06);
+            }
+    
+            30% {
+                transform: scale(1.09);
+            }
+    
+            40% {
+                transform: scale(1.12);
+            }
+    
+            50% {
+                transform: scale(1.15);
+            }
+    
+            60% {
+                transform: scale(1.12);
+            }
+    
+            70% {
+                transform: scale(1.09);
+            }
+    
+            80% {
+                transform: scale(1.06);
+            }
+    
+            90% {
+                transform: scale(1.03);
+            }
+    
+            100% {
+                transform: scale(1);
+            }
+    // @keyframes animate_girl {
+    //     0% {
+    //         transform: rotate(0deg);
+    //     }
+
+    //     10% {
+    //         transform: rotate(-36deg);
+    //     }
+
+    //     20% {
+    //         transform: rotate(-72deg);
+    //     }
+
+    //     30% {
+    //         transform: rotate(-108deg);
+    //     }
+
+    //     40% {
+    //         transform: rotate(-144deg);
+    //     }
+
+    //     50% {
+    //         transform: rotate(-180deg);
+    //     }
+
+    //     60% {
+    //         transform: rotate(-216deg);
+    //     }
+
+    //     70% {
+    //         transform: rotate(-252deg);
+    //     }
+
+    //     80% {
+    //         transform: rotate(-288deg);
+    //     }
+
+    //     90% {
+    //         transform: rotate(-324deg);
+    //     }
+
+    //     100% {
+    //         transform: rotate(-360deg);
+    //     }
     }
 }
 
