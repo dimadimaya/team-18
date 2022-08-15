@@ -1,258 +1,332 @@
 .contacts__section {
-    padding-bottom: 40px;
-    @include flex-pos();
-    background: var(--bgcSection);
+  padding-bottom: 40px;
+  @include flex-pos();
+  background: var(--bgcSection);
+  background-image: linear-gradient(
+    var(--colorWhite) 0%,
+    var(--colorWhite) 24%,
+    var(--bgcSection) 24%,
+    var(--bgcSection) 100%
+  );
+
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
-        var(--colorWhite) 0%,
-        var(--colorWhite)24%,
-        var(--bgcSection)24%,
-        var(--bgcSection) 100%);
+      var(--colorWhite) 0%,
+      var(--colorWhite) 46%,
+      var(--bgcSection) 46%,
+      var(--bgcSection) 100%
+    );
+  }
 
-@media screen and (min-width: 768px) {
-        background-image: linear-gradient(
-        var(--colorWhite) 0%,
-        var(--colorWhite)46%,
-        var(--bgcSection)46%,
-        var(--bgcSection) 100%);
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      var(--colorWhite) 0%,
+      var(--colorWhite) 22%,
+      var(--bgcSection) 22%,
+      var(--bgcSection) 100%
+    );
+  }
 }
-
-@media screen and (min-width: 768px) {
-        background-image: linear-gradient(
-            var(--colorWhite) 0%,
-            var(--colorWhite)22%,
-            var(--bgcSection)22%,
-            var(--bgcSection) 100%);
-}
+.contacts__container {
+  @media screen and (min-width: 768px) {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 736px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1200px;
+  }
 }
 
 .contacts__list {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -16px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -16px;
+  }
 }
 
 .contacts__item {
-    font-size: 12px;
-    line-height: 1.86;
-    text-align: left;
-    padding: 40px 32px;
-    background: var(--bgcPage) ;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: left;
+  padding: 40px 32px;
+  background: var(--bgcPage);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 20px;
+    width: calc((100% - 96px) / 3);
+    margin: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    padding: 40px 40px;
+  }
+
+  &:last-child {
     @media screen and (max-width: 767px) {
-        margin-bottom: 20px;
+      margin-bottom: 32px;
     }
-
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        margin-bottom: 20px;
-        width: calc((100% - 96px)/3);
-        margin: 16px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        padding: 40px 40px;
-    }
-
-    &:last-child {
-        @media screen and (max-width: 767px) {
-            margin-bottom: 32px;
-        }
-    }
+  }
 }
 
 .contacts__sale-type {
-    display: block;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--colorWhite);
-    background-color: var(--bgcColorBeige);
-    border-radius:6px;
-    width: 75px;
-    font-weight: 500;
+  display: block;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--colorWhite);
+  background-color: var(--bgcColorBeige);
+  border-radius: 6px;
+  width: 75px;
+  font-weight: 500;
 
-    @media screen and (min-width: 768px) {
-            font-size: 16px;
-          
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 
-    &--bgcolor {
-        background: var(--bgcColorLightGreen);
-        width: 138px;
-    }
+  &--bgcolor {
+    background: var(--bgcColorLightGreen);
+    width: 138px;
+  }
 }
 .contacts__place {
-        letter-spacing: 0.04em;
-        margin-top: 20px;
-        margin-bottom: 8px;
+  letter-spacing: 0.04em;
+  margin-top: 20px;
+  margin-bottom: 8px;
 
-        @media screen and (min-width: 768px) {
-            margin-top: 32px;
-            margin-bottom: 12px;
-        }
-    }
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+}
 .contacts__description {
-    line-height: 1.5;
+  line-height: 1.5;
 
-    color: var(--colorDescription);
+  color: var(--colorDescription);
 }
 
 .contacts__timetable {
-    margin-top: 24px;
-    margin-bottom: 24px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-top: 1px solid var(--colorLine);
-    border-bottom: 1px solid var(--colorLine);
-    @media screen and (min-width: 768px) {
-            margin-top: 32px;
-            margin-bottom: 32px;
-            padding-top: 32px;
-            padding-bottom: 32px;
-        }
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid var(--colorLine);
+  border-bottom: 1px solid var(--colorLine);
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__schedule:first-child {
-        margin-bottom: 8px;
-    
-        @media screen and (min-width: 768px) {
-            margin-bottom: 12px;
-        }
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
 }
 .contacts__day-time {
-        text-transform: uppercase;
-        color:var(--colorOverline);
+  text-transform: uppercase;
+  color: var(--colorOverline);
 }
 
-.contacts__item-connection  {
-         line-height: 1.5;
-         color: var(--colorDescription);
+.contacts__item-connection {
+  line-height: 1.5;
+  color: var(--colorDescription);
 }
 
 .contacts__button {
-        @media screen and (min-width: 768px) {
-            display: flex;
-            @include flex-pos;
-            margin-top: 60px;
-        }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    @include flex-pos;
+    margin-top: 60px;
+  }
 }
 
 .contacts__btn-item {
-        @media screen and (max-width: 767px) {
-    
-            @include flex-pos();
-            margin-bottom: 10px;
-        }
-    
-        @media screen and (min-width: 768px) {
-            margin-right: 12px;
-        }
+  @media screen and (max-width: 767px) {
+    @include flex-pos();
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 12px;
+  }
 }
 
 .contacts__btn {
-        min-width: 161px;
-        height: 44px;
-        
-        @media screen and (min-width: 768px) {
-            min-width: 191px;
-        }
-        
-        @media screen and (min-width: 1200px) {
-            min-width: 198px;
-        }
+  min-width: 161px;
+  height: 44px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 191px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 198px;
+  }
 }
-        
+
 .contacts__button-icon {
-            width: 8px;
-            height: 10px;
-            &.button-red__icon {
-                filter: brightness(100);
-                zoom: 1.2;
-            }
-        }
-    
+  width: 8px;
+  height: 10px;
+  &.button-red__icon {
+    filter: brightness(100);
+    zoom: 1.2;
+  }
+}
+
 .contacts__btn-item:last-child {
-            @media screen and (max-width: 767px) {
-                margin-bottom: 0px;
-            }
-    
-            @media screen and (min-width: 768px) {
-                margin-right: 0px;
-            }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0px;
+  }
 }
 
 .button-light {
-    @include flex-pos();
-    padding: 0;
+  @include flex-pos();
+  padding: 0;
 
-    font-weight: 700;
-    font-size: 16px;
+  font-weight: 700;
+  font-size: 16px;
 
-    color: var(--colorPrimary);
-    background-color:var(--bgcBtnWhite);
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+  color: var(--colorPrimary);
+  background-color: var(--bgcBtnWhite);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 
-    transition: background-color var(--durationPrimary) var(--timingPrimary);
+  transition: background-color var(--durationPrimary) var(--timingPrimary);
 
-    &:hover,
-    &:focus {
-        background-color: var(--bgcBtnWhiteHover);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--bgcBtnWhiteHover);
+  }
 }
 
 .button-red {
-    @include flex-pos();
-    padding: 0;
+  @include flex-pos();
+  padding: 0;
 
-    font-weight: 700;
-    font-size: 16px;
+  font-weight: 700;
+  font-size: 16px;
 
-    color: var(--colorWhite);
-    background-color: var(--bgcBtnDark);
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+  color: var(--colorWhite);
+  background-color: var(--bgcBtnDark);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 
-    transition: background-color var(--durationPrimary) var(--timingPrimary);   
+  transition: background-color var(--durationPrimary) var(--timingPrimary);
 
-    &:hover,
-    &:focus {
-        background-color: var(--bgcBtnDarkHover);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--bgcBtnDarkHover);
+  }
 }
 
 .button-red__icon,
 .button-light__icon {
-    width: 5px;
-    height: 8px;
-    // fill: currentColor;
-    margin-left: 12px;
+  width: 5px;
+  height: 8px;
+  // fill: currentColor;
+  margin-left: 12px;
 }
 .button-red:hover {
-    animation: glowing 1300ms infinite;
+  animation: glowing 1300ms infinite;
 }
- 
 
-  @keyframes glowing {
-      0% {
-          background-color: var(--bgcBtnDarkHover);
-          box-shadow: 0 0 3px var(--bgcBtnDarkHover);
-      }
-
-      50% {
-          background-color:var(--bgcBtnDark);
-          box-shadow: 0 0 15px var(--bgcBtnDark);
-      }
-
-      100% {
-          background-color: var(--bgcBtnDarkHover);
-          box-shadow: 0 0 3px var(--bgcBtnDarkHover);
-      }
+@keyframes glowing {
+  0% {
+    background-color: var(--bgcBtnDarkHover);
+    box-shadow: 0 0 3px var(--bgcBtnDarkHover);
   }
+
+  50% {
+    background-color: var(--bgcBtnDark);
+    box-shadow: 0 0 15px var(--bgcBtnDark);
+  }
+
+  100% {
+    background-color: var(--bgcBtnDarkHover);
+    box-shadow: 0 0 3px var(--bgcBtnDarkHover);
+  }
+}
+.link-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 120;
+
+  display: none;
+
+  width: 32px;
+  height: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 48px;
+    height: 48px;
+    bottom: 32px;
+    right: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 48px;
+    height: 48px;
+    bottom: 16px;
+    right: 16px;
+  }
+  color: var(--colorWhite);
+  background-color: var(--bgcBtnDark);
+  border: none;
+  border-top-left-radius: 50%;
+
+  border-bottom-right-radius: 50%;
+  transform: rotate(0);
+  transition: transform var(--durationPrimary) var(--timingPrimary);
+
+  &:hover,
+  &:focus {
+    transform: rotate(-180deg);
+
+    .icon-arrow {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.icon-arrow {
+  display: block;
+
+  width: 18px;
+  height: 21px;
+
+  background: url('../images/svg/up-arrow.svg') center center no-repeat;
+
+  @media screen and (min-width: 768px) {
+    width: 25px;
+    height: 30px;
+  }
+
+  fill: var(--colorWhite);
+}
+
+.link-arrow.is-visible {
+  @include flex-pos();
+}

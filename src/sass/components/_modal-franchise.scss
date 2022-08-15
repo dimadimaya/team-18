@@ -1,170 +1,168 @@
 .franchise__backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
-    background-color:var(--colorLine);
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.2);
-    transition: opacity var(--durationPrimary) var(--timingPrimary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: var(--colorLine);
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--durationPrimary) var(--timingPrimary);
 }
 .franchise__backdrop.is-hidden {
-     opacity: 0;
-     pointer-events: none;
-     visibility: hidden;
-    transition: opacity var(--durationPrimary) var(--timingPrimary);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity var(--durationPrimary) var(--timingPrimary);
 }
 .franchise__wrap {
-    position: relative;
-    visibility: visible;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 320px;
+  position: relative;
+  visibility: visible;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 320px;
 
-    padding: 20px;
-    min-width: 280px;
-    border: none;
-    border-radius:10px;
-    background-color: var(--colorWhite);
-    transition: opacity var(--durationPrimary) var(--timingPrimary);
+  padding: 20px;
+  min-width: 280px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--colorWhite);
+  transition: opacity var(--durationPrimary) var(--timingPrimary);
 
-    @media screen and(min-width: 1200px) {
-            min-width: 450px;
-        }
+  @media screen and(min-width: 1200px) {
+    min-width: 450px;
+  }
 }
 
 .form-field {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .form-field__input {
-    display: flex;
-    padding-left: 10px;
+  display: flex;
+  padding-left: 10px;
 
-    min-width: 150px;
-    height: 25px;
+  min-width: 150px;
+  height: 25px;
 
-    outline: none;
-    border: none;
-    background-color: transparent;
-    border-bottom: 1px solid var(--colorPrimary);
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--colorPrimary);
 
-    @media screen and(min-width:768px) {
-            min-width: 250px;
-        }
-    
-        &::placeholder {
-            font-size: 14px;
-            font-family: var(--fontPrimary),var(--fontSecondary); 
-            line-height: 1.2;
-            letter-spacing: 0.05em;
-            color:var(--colorPrimary);
-        }}
+  @media screen and(min-width:768px) {
+    min-width: 250px;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    font-family: var(--fontPrimary), var(--fontSecondary);
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    color: var(--colorPrimary);
+  }
+}
 .form-franchise__button {
-    margin: 0 auto;
-    min-width: 150px;
-    height: 44px;
-    color:var(--colorWhite);
+  margin: 0 auto;
+  min-width: 150px;
+  height: 44px;
+  color: var(--colorWhite);
 }
 
 .form-franchise__title {
-    font-size: 20px;
-    margin-bottom: 25px;
-    text-align: center;
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-align: center;
 
-    @media screen and(min-width:768px) {
-        font-size: 30px;
-    }
+  @media screen and(min-width:768px) {
+    font-size: 25px;
+  }
 }
 
 .modal__close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
+  position: absolute;
+  top: 35px;
+  right: 15px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 
-    border-radius: 50%;
-    background-color: var(--bgcBtnDark);
-    border: 2px solid var(--bgcBtnDar);
-    cursor: pointer;
-    z-index: 100;
+  border-radius: 50%;
+  background-color: var(--bgcBtnDark);
+  border: 2px solid var(--bgcBtnDar);
+  cursor: pointer;
+  z-index: 100;
 
-    &:hover,
-    &:focus {
-        background-color: var(--bgcBtnDarkHover);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--bgcBtnDarkHover);
+  }
 }
 
 .modal__close-btn-icon {
-    display: block;
-    margin: auto;
-    fill: var(--bgcMenuMobile);
-    transition: fill var(--durationPrimary) var(--timingPrimary);
-    z-index: 100;
+  display: block;
+  margin: auto;
+  fill: var(--bgcMenuMobile);
+  transition: fill var(--durationPrimary) var(--timingPrimary);
+  z-index: 100;
 }
 .form-field__text {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: var(--colorBlack);
-    margin-bottom: 4px;
-
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--colorBlack);
+  margin-bottom: 4px;
 }
 .form-field__input--textarea {
-    padding: 11px 12px;
-    border-radius: 4px;
-    border: 1px solid var(--colorPrimary);
-    resize: none;
-    height: 120px;
+  padding: 11px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--colorPrimary);
+  resize: none;
+  height: 120px;
 
-    &::placeholder {
-        color: var(--colorPrimary);
-    }
+  &::placeholder {
+    color: var(--colorPrimary);
+  }
 }
 .franchise__wrap {
-    padding: 40px 20px 20px;
-    background-image: url('../images/mobile/mobile-about-background.jpg');
+  padding: 40px 20px 20px;
+  background-image: url('../images/mobile/mobile-about-background.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/desktop/desktop-about-background.jpg');
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/desktop/desktop-about-background.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+  }
 
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url('../images/desktop/desktop-about-background.jpg');
-    }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/desktop/desktop-about-background@2x.jpg');
+  }
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
 
-
-
-    @media screen and (min-width: 1200px) {
-        background-image:url('../images/desktop/desktop-about-background.jpg');
-        background-repeat:no-repeat;
-        background-size:contain;
-    }
-
-     @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/desktop/desktop-about-background@2x.jpg');
-        }
-    @media screen and (min-width: 768px) {
-              width: 400px;
-    }
-    
-    @media screen and (min-width: 1200px) {
-              width: 600px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+  }
 }
