@@ -1,27 +1,43 @@
 // --- header scss
 .section__header {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    // position: absolute;
+    // top: 0;
+    // left: 50%;
+    // transform: translateX(-50%);
+    background-color: var(--bgcHeader);
     z-index: 5;
     padding: 0;
     padding-top: 8px;
 
     @media screen and (min-width: 768px) {
+        position: absolute;
+        background-color: transparent;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
         padding-top: 29px;
     }
 
     @media screen and (min-width: 1200px) {
+        position: absolute;
+        background-color: transparent;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
         padding-top: 37px;
     }
 }
 
 .container__header {
+
     @include flex-pos(flex, space-between);
 
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
     @media screen and (min-width: 1200px) {
-        @include flex-pos(flex, space-between);
+        width: 1200px;
     }
 }
 
@@ -102,8 +118,10 @@
     top: 0;
     left: 0;
     z-index: 10;
-    width: 100vw;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: calc(100vw - 17px);
+    height: var(--menuTabletHeight);
     background-color: var(--bgcBackDrop);
     transition: visibility var(--durationPrimary) var(--timingPrimary);
 }
@@ -118,7 +136,7 @@
     left: 100vw;
     z-index: 20;
     width: var(--menuMobileWidth);
-    height: 100vh;
+    height: var(--menuTabletHeight);
     overflow: hidden;
     background-color: var(--bgcMenuMobile);
     box-shadow: var(--shadowMenuMobile);
@@ -147,6 +165,7 @@
     &:hover,
     &:focus {
         fill: var(--colorPrimary);
+        scale: 120%;
     }
     
     @media screen and (min-width: 1200px) {
@@ -208,6 +227,7 @@
     &:hover,
     &:focus {
         background-color: var(--bgcBtnWhiteHover);
+        scale: 120%;
     }
 }
 
@@ -229,6 +249,7 @@
     &:hover,
     &:focus {
         background-color: var(--bgcBtnDarkHover);
+        scale: 120%;
     }
 }
 
@@ -274,14 +295,16 @@
     position: relative;
     overflow: hidden;
     background-color: var(--bgcHeader);
-    height: 502px;
-    // width: 1600px;
+    height: var(--menuMobileHeight);
+    margin-top: -0px;
 
     @media screen and (min-width: 768px) {
+        position: relative;
         height: 416px;
     }
 
     @media screen and (min-width: 1200px) {
+        position: relative;
         height: 664px;
     }
 }
@@ -454,6 +477,7 @@
     &:hover,
     &:focus {
         background-color: var(--bgcBtnDarkHover);
+        scale: 120%;
     }
 }
 
@@ -542,6 +566,7 @@
     &:focus {
             background-color: var(--bgcBtnDark);
             color: var(--colorWhite);
+            scale: 120%;
     }
 }
 

@@ -7,6 +7,7 @@
     z-index: 100;
     background-color:var(--colorLine);
     opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
     transition: opacity var(--durationPrimary) var(--timingPrimary);
 }
 .franchise__backdrop.is-hidden {
@@ -114,7 +115,7 @@
     transition: fill var(--durationPrimary) var(--timingPrimary);
     z-index: 100;
 }
-.modal-form__label {
+.form-field__text {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -122,15 +123,48 @@
     margin-bottom: 4px;
 
 }
-.modal-form__input--textarea {
+.form-field__input--textarea {
     padding: 11px 12px;
     border-radius: 4px;
-    border: var(--colorBlack);
+    border: 1px solid var(--colorPrimary);
     resize: none;
     height: 120px;
 
     &::placeholder {
-        color: var(--colorBlack);
+        color: var(--colorPrimary);
     }
 }
+.franchise__wrap {
+    padding: 40px 20px 20px;
+    background-image: url('../images/mobile/mobile-about-background.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/desktop/desktop-about-background.jpg');
+    }
+
+
+
+    @media screen and (min-width: 1200px) {
+        background-image:url('../images/desktop/desktop-about-background.jpg');
+        background-repeat:no-repeat;
+        background-size:contain;
+    }
+
+     @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/desktop/desktop-about-background@2x.jpg');
+        }
+    @media screen and (min-width: 768px) {
+              width: 400px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+              width: 600px;
+    }
+}
