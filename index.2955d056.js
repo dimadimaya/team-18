@@ -1,0 +1,2 @@
+var trueCallback=function(e,o){var r=document.querySelector(".link-arrow");r.removeEventListener("click",scrollTop),r.addEventListener("click",scrollTop),e.forEach((function(e){e.isIntersecting?r.classList.remove("is-visible"):r.classList.add("is-visible")}))};function scrollTop(){document.body.scrollTop=document.documentElement.scrollTop=0}var options={root:null,rootMargin:"0px",threshold:0},observer=new IntersectionObserver(trueCallback,options),target=document.getElementsByTagName("header")[0];observer.observe(target);
+//# sourceMappingURL=index.2955d056.js.map
