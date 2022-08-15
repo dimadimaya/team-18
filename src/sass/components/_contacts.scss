@@ -81,11 +81,10 @@
           
     }
 
-
-&--bgcolor {
-    background: var(--bgcColorLightGreen);
-    width: 138px;
-}
+    &--bgcolor {
+        background: var(--bgcColorLightGreen);
+        width: 138px;
+    }
 }
 .contacts__place {
         letter-spacing: 0.04em;
