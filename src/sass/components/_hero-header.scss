@@ -1,9 +1,5 @@
 // --- header scss
 .section__header {
-    // position: absolute;
-    // top: 0;
-    // left: 50%;
-    // transform: translateX(-50%);
     background-color: var(--bgcHeader);
     z-index: 5;
     padding: 0;
@@ -39,10 +35,6 @@
     @media screen and (min-width: 1200px) {
         width: 1200px;
     }
-}
-
-.header__link {
-
 }
 
 .header__logo {
@@ -322,6 +314,23 @@
     height: 346px;
     background-color: var(--bgcSocial);
     border-radius: 50%;
+    background: linear-gradient(45deg, var(--bgcMenuMobile), var(--bgcHeader), var(--bgcPage));
+    background-size: 200% 200%;
+    animation: animate-eclipse 3s ease-out 10;
+
+    @keyframes animate-eclipse {
+        0% {
+            background-position: 0 50%;
+        }
+        
+        50% {
+            background-position: 50% 50%;
+        }
+        
+        100% {
+            background-position: 0 50%;
+        }
+    }
 
     @media screen and (min-width: 419px) {
         top: 50%;
@@ -809,99 +818,56 @@
 }
 
 .animate-girl {
-    animation: none;
+    animation: animate_girl 1s infinite;
 
     &:hover {
-        animation: animate_girl 1s infinite;
-    }
-        @keyframes animate_girl {
+            animation: none;
+        }
+    
+    @keyframes animate_girl {
             0% {
                 transform: scale(1);
             }
-    
+
             10% {
-                transform: scale(1.03);
+                transform: scale(1.02);
             }
-    
+
             20% {
-                transform: scale(1.06);
+                transform: scale(1.04);
             }
-    
+
             30% {
-                transform: scale(1.09);
-            }
-    
-            40% {
-                transform: scale(1.12);
-            }
-    
-            50% {
-                transform: scale(1.15);
-            }
-    
-            60% {
-                transform: scale(1.12);
-            }
-    
-            70% {
-                transform: scale(1.09);
-            }
-    
-            80% {
                 transform: scale(1.06);
             }
-    
-            90% {
-                transform: scale(1.03);
+
+            40% {
+                transform: scale(1.08);
             }
-    
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            60% {
+                transform: scale(1.08);
+            }
+
+            70% {
+                transform: scale(1.06);
+            }
+
+            80% {
+                transform: scale(1.04);
+            }
+
+            90% {
+                transform: scale(1.02);
+            }
+
             100% {
                 transform: scale(1);
             }
-    // @keyframes animate_girl {
-    //     0% {
-    //         transform: rotate(0deg);
-    //     }
-
-    //     10% {
-    //         transform: rotate(-36deg);
-    //     }
-
-    //     20% {
-    //         transform: rotate(-72deg);
-    //     }
-
-    //     30% {
-    //         transform: rotate(-108deg);
-    //     }
-
-    //     40% {
-    //         transform: rotate(-144deg);
-    //     }
-
-    //     50% {
-    //         transform: rotate(-180deg);
-    //     }
-
-    //     60% {
-    //         transform: rotate(-216deg);
-    //     }
-
-    //     70% {
-    //         transform: rotate(-252deg);
-    //     }
-
-    //     80% {
-    //         transform: rotate(-288deg);
-    //     }
-
-    //     90% {
-    //         transform: rotate(-324deg);
-    //     }
-
-    //     100% {
-    //         transform: rotate(-360deg);
-    //     }
     }
 }
 
