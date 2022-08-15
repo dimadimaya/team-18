@@ -52,7 +52,6 @@
   }
 
   .products-list__item {
-    // position: relative;
     width: 100%;
     text-align: left;
     perspective: 1500px;
@@ -391,17 +390,20 @@
 
 .product-card__btn {
   @include flex-pos();
-  margin-top: 32px;
-  margin-right: auto;
-  margin-left: auto;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 40px;
   height: 40px;
   border-radius: 50%;
+
   outline: none;
   background-color: var(--bgcBtnWhite);
 
   @media screen and (min-width: ($desktop)) {
     margin-top: 60px;
+    bottom: 60px;
   }
   transition: background-color var(--durationSecondary)
       cubic-bezier(0.4, 0, 0.2, 1),
