@@ -1,12 +1,16 @@
 <header>
   <div class="header__backdrop-menu" data-menu-backdrop>
     <div id="menu" class="header__menu" data-menu>
-      <button type="button" class="header__menu-button" data-menu-button-close>
-        <svg class="header__menu-close" aria-label="close button">
+      <button
+        type="button"
+        class="header__menu-button"
+        data-menu-button-close
+      >
+        <svg class="header__menu-close" aria-label="close-button">
           <use href="./images/svg/icons.svg#icon-close-cross"></use>
         </svg>
       </button>
-      <button class="button-white button-white--menu" data-modal-buy-open>
+      <button class="button-white button-white--menu" data-modal-buy-open1>
         Buy now
         <svg class="button-white__icon">
           <use href="./images/svg/icons.svg#icon-arrow-more"></use>
@@ -67,12 +71,12 @@
           aria-controls="menu"
           data-menu-button
         >
-          <svg class="header__menu-mobile" aria-label="mobile menu">
+          <svg class="header__menu-mobile" aria-label="mobile-menu">
             <use href="./images/svg/icons.svg#icon-menu-mobile"></use>
           </svg>
         </button>
       </div>
-      <button class="button-white button-white--desktop" data-modal-buy-open>
+      <button class="button-white button-white--desktop" data-modal-buy-open2>
         Buy now
         <svg class="button-white__icon">
           <use href="./images/svg/icons.svg#icon-arrow-more"></use>
@@ -83,8 +87,17 @@
   <!-- hero section     -->
   <section class="section hero__section">
     <div class="container hero__container">
-      <div class="hero__eclipse">
-        <picture class="hero__top-icecream">
+      <div class="hero__eclipse animate-eclipse">
+        <picture class="hero__top-icecream animate-icecream">
+          <source
+            srcset="
+              ./images/desktop/desktop-top-icecream.webp    1x,
+              ./images/desktop/desktop-top-icecream@2x.webp 2x,
+              ./images/desktop/desktop-top-icecream@3x.webp 3x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
           <source
             srcset="
               ./images/desktop/desktop-top-icecream.png    1x,
@@ -96,12 +109,30 @@
           />
           <source
             srcset="
+              ./images/tablet/tablet-top-icecream.webp    1x,
+              ./images/tablet/tablet-top-icecream@2x.webp 2x,
+              ./images/tablet/tablet-top-icecream@3x.webp 3x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
               ./images/tablet/tablet-top-icecream.png    1x,
               ./images/tablet/tablet-top-icecream@2x.png 2x,
               ./images/tablet/tablet-top-icecream@3x.png 3x
             "
             media="(min-width: 768px)"
             type="image/png"
+          />
+          <source
+            srcset="
+              ./images/mobile/mobile-top-icecream.webp    1x,
+              ./images/mobile/mobile-top-icecream@2x.webp 2x,
+              ./images/mobile/mobile-top-icecream@3x.webp 3x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
           />
           <source
             srcset="
@@ -139,7 +170,16 @@
           </li>
         </ul>
         <div class="hero__milk">
-          <picture class="hero__milk-img">
+          <picture class="hero__milk-img animate-milk">
+            <source
+              srcset="
+                ./images/desktop/desktop-top-milk.webp    1x,
+                ./images/desktop/desktop-top-milk@2x.webp 2x,
+                ./images/desktop/desktop-top-milk@3x.webp 3x
+              "
+              media="(min-width: 1200px)"
+              type="image/webp"
+            />
             <source
               srcset="
                 ./images/desktop/desktop-top-milk.png    1x,
@@ -148,6 +188,15 @@
               "
               media="(min-width: 1200px)"
               type="image/png"
+            />
+            <source
+              srcset="
+                ./images/tablet/tablet-top-milk.webp    1x,
+                ./images/tablet/tablet-top-milk@2x.webp 2x,
+                ./images/tablet/tablet-top-milk@3x.webp 3x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
             />
             <source
               srcset="
@@ -175,9 +224,9 @@
               eiusmod tempor incididunt ut labore et
             </p>
             <button class="arrow-button arrow-button--for-hero" type="button">
-              <svg class="arrow-button__icon arrow-button__icon--for-hero">
-                <use href="./images/svg/icons.svg#icon-arrow-right"></use>
-              </svg>
+                <svg class="arrow-button__icon arrow-button__icon--for-hero">
+                  <use href="./images/svg/icons.svg#icon-arrow-right"></use>
+                </svg>
             </button>
           </div>
         </div>
@@ -193,7 +242,16 @@
             <p class="hero__description">food trucks</p>
           </li>
         </ul>
-        <picture class="hero__girl">
+        <picture class="hero__girl animate-girl">
+          <source
+            srcset="
+              ./images/desktop/desktop-top-girl.webp    1x,
+              ./images/desktop/desktop-top-girl@2x.webp 2x,
+              ./images/desktop/desktop-top-girl@3x.webp 3x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
           <source
             srcset="
               ./images/desktop/desktop-top-girl.png    1x,
@@ -202,6 +260,15 @@
             "
             media="(min-width: 1200px)"
             type="image/png"
+          />
+          <source
+            srcset="
+              ./images/tablet/tablet-top-girl.webp    1x,
+              ./images/tablet/tablet-top-girl@2x.webp 2x,
+              ./images/tablet/tablet-top-girl@3x.webp 3x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
           />
           <source
             srcset="

@@ -1,9 +1,5 @@
 // --- header scss
 .section__header {
-    // position: absolute;
-    // top: 0;
-    // left: 50%;
-    // transform: translateX(-50%);
     background-color: var(--bgcHeader);
     z-index: 5;
     padding: 0;
@@ -39,10 +35,6 @@
     @media screen and (min-width: 1200px) {
         width: 1200px;
     }
-}
-
-.header__link {
-
 }
 
 .header__logo {
@@ -113,28 +105,34 @@
 .header__backdrop-menu {
     position: absolute;
     visibility: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
     top: 0;
     left: 0;
     z-index: 10;
     margin: 0;
     padding: 0;
     width: calc(100vw - 17px);
+    opacity: 0;
     height: var(--menuTabletHeight);
     background-color: var(--bgcBackDrop);
     transition: visibility var(--durationPrimary) var(--timingPrimary);
+
+    @media screen and (min-width: 1200px) {
+        width: calc(100vw - calc(100vw - 100%));
+    }
 }
 
 .header__backdrop-menu.is-open {
     visibility: visible;
+    opacity: 1;
 }
 
 .header__menu {
     position: absolute;
     top: 0;
+    right: 0;
     left: 100vw;
-    z-index: 20;
+    z-index: 15;
     width: var(--menuMobileWidth);
     height: var(--menuTabletHeight);
     overflow: hidden;
@@ -154,13 +152,13 @@
 .header__menu-close {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 40px;
     z-index: 20;
     display: block;
     width: 14px;
     height: 14px;
     fill: var(--colorWhite);
-    transition: fill var(--durationPrimary) var(--timingPrimary);
+    transition: fill var(--durationPrimary) var(--timingPrimary), scale var(--durationSecondary) var(--timingSecondary);
 
     &:hover,
     &:focus {
@@ -222,7 +220,7 @@
     border-radius: 20px;
     cursor: pointer;
 
-    transition: background-color var(--durationPrimary) var(--durationPrimary);
+    transition: background-color var(--durationPrimary) var(--durationPrimary), scale var(--durationSecondary) var(--timingSecondary);
 
     &:hover,
     &:focus {
@@ -244,7 +242,8 @@
     border-radius: 20px;
     cursor: pointer;
 
-    transition: background-color var(--durationPrimary) var(--durationPrimary);
+    transition: background-color var(--durationPrimary) var(--durationPrimary),
+        scale var(--durationSecondary) var(--timingSecondary);
 
     &:hover,
     &:focus {
@@ -295,7 +294,7 @@
     position: relative;
     overflow: hidden;
     background-color: var(--bgcHeader);
-    height: var(--menuMobileHeight);
+    height: calc(var(--menuMobileHeight));
     margin-top: -0px;
 
     @media screen and (min-width: 768px) {
@@ -319,6 +318,23 @@
     height: 346px;
     background-color: var(--bgcSocial);
     border-radius: 50%;
+    background: linear-gradient(90deg, var(--bgcMenuMobile), var(--bgcHeader), var(--bgcPage));
+    background-size: 200% 200%;
+    animation: animate-eclipse 3s ease-out 10;
+
+    @keyframes animate-eclipse {
+        0% {
+            background-position: 0 50%;
+        }
+        
+        50% {
+            background-position: 50% 50%;
+        }
+        
+        100% {
+            background-position: 0 50%;
+        }
+    }
 
     @media screen and (min-width: 419px) {
         top: 50%;
@@ -368,6 +384,50 @@
         height: 557px;
         top: 54px;
         left: 119px;
+    }
+}
+
+.animate-icecream {
+    animation: none;
+
+    &:hover {
+        animation: animate_icecream 1s infinite;
+    }
+    
+    @keyframes animate_icecream {
+        0% {
+            transform: scale3d(1, 1, 1);
+        }
+        10% {
+            transform: scale3d(1.03, 1.03, 1.03);
+        }
+        20% {
+            transform: scale3d(1.06, 1.06, 1.06);
+        }
+        30% {
+            transform: scale3d(1.09, 1.09, 1.09);
+        }
+        40% {
+            transform: scale3d(1.12, 1.12, 1.12);
+        }
+        50% {
+            transform: scale3d(1.15, 1.15, 1.15);
+        }
+        60% {
+            transform: scale3d(1.12, 1.12, 1.12);
+        }
+        70% {
+            transform: scale3d(1.09, 1.09, 1.09);
+        }
+        80%{
+            transform: scale3d(1.06, 1.06, 1.06);
+        }
+        90%{
+            transform: scale3d(1.03, 1.03, 1.03);
+        }
+        100% {
+            transform: scale3d(1, 1, 1);
+        }
     }
 }
 
@@ -472,7 +532,7 @@
         height: 40px;
     }
 
-    transition: background-color var(--durationPrimary) var(--timingPrimary);
+    transition: background-color var(--durationPrimary) var(--timingPrimary), scale var(--durationSecondary) var(--timingSecondary);
 
     &:hover,
     &:focus {
@@ -525,6 +585,60 @@
     }
 }
 
+.animate-milk {
+    animation: none;
+
+    &:hover {
+        animation: animate_milk 1s infinite;
+    }
+
+    @keyframes animate_milk {
+        0% {
+            transform: rotateZ(25deg);
+        }
+
+        10% {
+            transform: rotateZ(-25deg);
+        }
+
+        20% {
+            transform: rotateZ(20deg);
+        }
+
+        30% {
+            transform: rotateZ(-20deg);
+        }
+
+        40% {
+            transform: rotateZ(15deg);
+        }
+
+        50% {
+            transform: rotateZ(-15deg);
+        }
+
+        60% {
+            transform: rotateZ(10deg);
+        }
+
+        70% {
+            transform: rotateZ(-10deg);
+        }
+
+        80% {
+            transform: rotateZ(5deg);
+        }
+
+        90% {
+            transform: rotateZ(-5deg);
+        }
+
+        100% {
+            transform: rotateZ(0deg);
+        }
+    }
+}
+
 .hero__milk-description {
     padding-top: 41px;
     font-size: 8;
@@ -560,7 +674,8 @@
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color var(--durationPrimary) var(--timingSecondary), color var(--durationPrimary) var(--timingSecondary);
+    transition: background-color var(--durationPrimary) var(--timingSecondary), color var(--durationPrimary) var(--timingSecondary),
+        scale var(--durationSecondary) var(--timingSecondary);
 
     &:hover,
     &:focus {
@@ -618,7 +733,7 @@
 .hero__counter-list {
     margin-bottom: 72px;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 109px;
     }
 }
@@ -626,7 +741,7 @@
 .hero__counter-item:first-child {
     margin-bottom: 13px;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 18px;
     }
 }
@@ -644,7 +759,7 @@
     text-transform: uppercase;
     color: var(--colorPrimary);
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         font-size: 46px;
         line-height: 1.15;
     }
@@ -662,7 +777,7 @@
         content: '';
         background-color: var(--bgcPage);
 
-        @media screen and (min-width: 1280px) {
+        @media screen and (min-width: 1200px) {
             width: 30px;
             height: 30px;
         }
@@ -676,7 +791,7 @@
     text-align: right;
     color: var(--colorWhite);
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.13;
     }
@@ -703,6 +818,60 @@
         width: 304px;
         height: 241px;
         margin-top: 103px;
+    }
+}
+
+.animate-girl {
+    animation: animate_girl 1s infinite;
+
+    &:hover {
+            animation: none;
+        }
+    
+    @keyframes animate_girl {
+            0% {
+                transform: scale(1);
+            }
+
+            10% {
+                transform: scale(1.02);
+            }
+
+            20% {
+                transform: scale(1.04);
+            }
+
+            30% {
+                transform: scale(1.06);
+            }
+
+            40% {
+                transform: scale(1.08);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            60% {
+                transform: scale(1.08);
+            }
+
+            70% {
+                transform: scale(1.06);
+            }
+
+            80% {
+                transform: scale(1.04);
+            }
+
+            90% {
+                transform: scale(1.02);
+            }
+
+            100% {
+                transform: scale(1);
+            }
     }
 }
 

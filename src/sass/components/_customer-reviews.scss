@@ -1,11 +1,13 @@
 .reviews {
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    padding-left: 74px;
+    padding-right: 74px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    padding-left: 116px;
+    padding-right: 116px;
   }
 }
 
@@ -13,6 +15,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 85px;
+  height: 85px;
 }
 
 .reviews__thumb {
@@ -20,37 +24,20 @@
   justify-content: center;
   position: relative;
   text-align: center;
-  width: 280px;
-  margin-top: 32px;
-  margin: auto;
+  padding: 43px 50px 17px 50px;
+  margin: 32px auto;
   background: var(--bgcQuote);
   z-index: 9;
-  margin-top: 32px;
 
   @media screen and (min-width: 768px) {
-    width: 620px;
-    margin-top: 20px;
+    padding: 37px 6px 36px;
+    margin-top: 20px auto;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 968px;
+    padding: 47px 73px 31px;
     margin-top: 16px;
   }
-}
-
-.reviews__line::before {
-  content: url(/src/images/png/brackets.png);
-  position: absolute;
-  display: block;
-  left: 0;
-  top: -4px;
-  transform: translateY(-100%);
-  z-index: -1;
-
-  @media screen and (min-width: 768px) and (max-width:1199px) {
-    top: -8px;
-  }
-
 }
 
 .reviews__thumb::after {
@@ -66,54 +53,48 @@
   bottom: -16px;
 }
 
-.reviews__line {
-  margin: 74px 50px 17px;
-  width: 180px;
-  height: 217px;
-  position:relative;
-  background: repeating-linear-gradient(
-    rgba(225, 225, 225, 1) 1px,
-    transparent 2px 30px
-  );
-
-  @media screen and (min-width: 768px) {
-    width: 608px;
-    height: 62px;
-    margin: 68px 6px 36px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 821px;
-    height: 31px;
-    margin: 73px 74px 31px;
-  }
-}
-
 .reviews__text {
-  position: absolute;
-  margin: auto;
-  padding-top: 43px;
-  width: 157px;
+  position: relative;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 2.55;
+  line-height: 2.58;
   text-align: center;
+  padding: 0 8px 9px 15px;
+    background-image: repeating-linear-gradient(
+    to bottom,
+    #fafafa00,
+    #fafafa00 29px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  ); 
 
   @media screen and (min-width: 768px) {
-    width: 514px;
-    padding-top: 37px;
+    padding: 0 49px 8px 45px;
     font-size: 14px;
     line-height: 2.16;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 750px;
-    padding-top: 47px;
+    padding: 0 35px 8px 37px;
     font-size: 16px;
     line-height: 1.86;
   }
+}
+
+.reviews__text::before {
+  content: url(/src/images/png/brackets.png);
+  position: absolute;
+  display: block;
+  left: 0;
+  top: -13px;
+  z-index: -1;
+
+  @media screen and (min-width: 768px) and (max-width:1199px) {
+    top: -17px;
+  }
+
 }
 
 .reviews__spot {
