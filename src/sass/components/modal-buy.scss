@@ -28,7 +28,10 @@
   background-color: var(--bgcMenuMobile);
   align-content: center;
   justify-content: center;
-  overflow-y: scroll;
+
+  @media screen and (max-width: 767px) {
+    overflow-y: scroll;
+  }
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
