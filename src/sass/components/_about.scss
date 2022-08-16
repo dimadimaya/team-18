@@ -319,14 +319,14 @@
             padding: 0;
 
             @media screen and (min-width:$tablet) {
-                max-height: 767px;
-                max-width: 693px;
+                height: 767px;
+                width: 693px;
                 border-radius: 22px;
             }
         
             @media screen and (min-width:$desktop) {
-                max-width: 811px;
-                max-height: 811px;
+                width: 811px;
+                height: 811px;
                 
             }
         }
