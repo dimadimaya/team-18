@@ -3101,26 +3101,21 @@ body {
   color: var(--colorPrimary);
 }
 
-.form-franchise__button {
+.form-field__button {
   margin: 0 auto;
   min-width: 150px;
   height: 44px;
   color: var(--colorWhite);
 }
 
-.form-franchise__title {
+.form-field__title {
   font-size: 20px;
   margin-bottom: 25px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .form-franchise__title {
-    font-size: 25px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .form-franchise__title {
-    font-size: 35px;
+  .form-field__title {
+    font-size: 30px;
   }
 }
 
