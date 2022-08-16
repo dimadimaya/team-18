@@ -66,14 +66,14 @@
     color: var(--colorPrimary);
   }
 }
-.form-franchise__button {
+.form-field__button {
   margin: 0 auto;
   min-width: 150px;
   height: 44px;
   color: var(--colorWhite);
 }
 
-.form-franchise__title {
+.form-field__title {
   font-size: 20px;
   margin-bottom: 25px;
   text-align: center;
@@ -106,6 +106,42 @@
   border: 2px solid var(--bgcBtnDar);
   cursor: pointer;
   z-index: 100;
+
+  animation: pulsing 2s infinite;
+
+  @-webkit-keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+
+    50% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }
+
+  @keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+
+    50% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }
 
   &:hover,
   &:focus {
