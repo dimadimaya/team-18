@@ -111,11 +111,15 @@
     z-index: 10;
     margin: 0;
     padding: 0;
-    width: calc(100vw);
+    width: calc(100vw - 17px);
     opacity: 0;
     height: var(--menuTabletHeight);
     background-color: var(--bgcBackDrop);
     transition: visibility var(--durationPrimary) var(--timingPrimary);
+
+    @media screen and (min-width: 1200px) {
+        width: calc(100vw - calc(100vw - 100%));
+    }
 }
 
 .header__backdrop-menu.is-open {
@@ -290,7 +294,7 @@
     position: relative;
     overflow: hidden;
     background-color: var(--bgcHeader);
-    height: var(--menuMobileHeight);
+    height: calc(var(--menuMobileHeight));
     margin-top: -0px;
 
     @media screen and (min-width: 768px) {
@@ -314,7 +318,7 @@
     height: 346px;
     background-color: var(--bgcSocial);
     border-radius: 50%;
-    background: linear-gradient(45deg, var(--bgcMenuMobile), var(--bgcHeader), var(--bgcPage));
+    background: linear-gradient(90deg, var(--bgcMenuMobile), var(--bgcHeader), var(--bgcPage));
     background-size: 200% 200%;
     animation: animate-eclipse 3s ease-out 10;
 
@@ -729,7 +733,7 @@
 .hero__counter-list {
     margin-bottom: 72px;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 109px;
     }
 }
@@ -737,7 +741,7 @@
 .hero__counter-item:first-child {
     margin-bottom: 13px;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 18px;
     }
 }
@@ -755,7 +759,7 @@
     text-transform: uppercase;
     color: var(--colorPrimary);
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         font-size: 46px;
         line-height: 1.15;
     }
@@ -773,7 +777,7 @@
         content: '';
         background-color: var(--bgcPage);
 
-        @media screen and (min-width: 1280px) {
+        @media screen and (min-width: 1200px) {
             width: 30px;
             height: 30px;
         }
@@ -787,7 +791,7 @@
     text-align: right;
     color: var(--colorWhite);
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.13;
     }
