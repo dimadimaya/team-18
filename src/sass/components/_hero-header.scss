@@ -393,43 +393,46 @@
 .animate-icecream {
     animation: none;
 
-    &:hover {
-        animation: animate_icecream 1s infinite;
-    }
-    
-    @keyframes animate_icecream {
-        0% {
-            transform: scale3d(1, 1, 1);
+    @media screen and (min-width: 768px) {
+            
+        &:hover {
+            animation: animate_icecream 1s infinite;
         }
-        10% {
-            transform: scale3d(1.03, 1.03, 1.03);
-        }
-        20% {
-            transform: scale3d(1.06, 1.06, 1.06);
-        }
-        30% {
-            transform: scale3d(1.09, 1.09, 1.09);
-        }
-        40% {
-            transform: scale3d(1.12, 1.12, 1.12);
-        }
-        50% {
-            transform: scale3d(1.15, 1.15, 1.15);
-        }
-        60% {
-            transform: scale3d(1.12, 1.12, 1.12);
-        }
-        70% {
-            transform: scale3d(1.09, 1.09, 1.09);
-        }
-        80%{
-            transform: scale3d(1.06, 1.06, 1.06);
-        }
-        90%{
-            transform: scale3d(1.03, 1.03, 1.03);
-        }
-        100% {
-            transform: scale3d(1, 1, 1);
+        
+        @keyframes animate_icecream {
+            0% {
+                transform: scale3d(1, 1, 1);
+            }
+            10% {
+                transform: scale3d(1.03, 1.03, 1.03);
+            }
+            20% {
+                transform: scale3d(1.06, 1.06, 1.06);
+            }
+            30% {
+                transform: scale3d(1.09, 1.09, 1.09);
+            }
+            40% {
+                transform: scale3d(1.12, 1.12, 1.12);
+            }
+            50% {
+                transform: scale3d(1.15, 1.15, 1.15);
+            }
+            60% {
+                transform: scale3d(1.12, 1.12, 1.12);
+            }
+            70% {
+                transform: scale3d(1.09, 1.09, 1.09);
+            }
+            80%{
+                transform: scale3d(1.06, 1.06, 1.06);
+            }
+            90%{
+                transform: scale3d(1.03, 1.03, 1.03);
+            }
+            100% {
+                transform: scale3d(1, 1, 1);
+            }
         }
     }
 }
