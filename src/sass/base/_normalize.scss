@@ -6,24 +6,29 @@ ul,
 li {
   margin: 0;
 }
+
 ul,
 li {
   list-style: none;
   text-decoration: none;
   padding: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 address {
   font-style: normal;
 }
+
 button {
   padding: 0;
   border: none;
@@ -32,8 +37,11 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+
 *:focus-visible {
   outline: none;
 }
 
-body {margin: 0;}
+body {
+  margin: 0;
+}
