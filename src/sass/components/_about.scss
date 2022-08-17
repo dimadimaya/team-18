@@ -322,12 +322,16 @@
             @media screen and (min-width:$tablet) {
                 height: 767px;
                 width: 693px;
+                min-height: 767px;
+                min-width: 693px;
                 border-radius: 22px;
             }
         
             @media screen and (min-width:$desktop) {
                 width: 811px;
                 height: 811px;
+                min-width: 811px;
+                min-height: 811px;
                 
             }
         }
