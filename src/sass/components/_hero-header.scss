@@ -392,8 +392,6 @@
 
 .animate-icecream {
     animation: none;
-
-    @media screen and (min-width: 768px) {
             
         &:hover {
             animation: animate_icecream 1s infinite;
@@ -434,7 +432,6 @@
                 transform: scale3d(1, 1, 1);
             }
         }
-    }
 }
 
 .hero__left-overlay {
