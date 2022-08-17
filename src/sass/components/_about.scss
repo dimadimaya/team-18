@@ -7,8 +7,16 @@
         background-image: url('../images/desktop/desktop-about-background.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: auto;
-    }
+        background-size: cover;
+        }
+    
+        @media (device-pixel-ratio: 2) , (resolution: 2dppx) , (resolution: 192dpi) and (min-width:$desktop) {
+            background-image: url('../images/desktop/desktop-about-background@2x.png');
+        }
+    
+        @media (min-device-pixel-ratio: 3) , (min-resolution: 3dppx) , (min-resolution: 288dpi) and (min-width:$desktop) {
+            background-image: url('../images/desktop/desktop-about-background@3x.png');
+        }
 
     @media (device-pixel-ratio: 2),
     (resolution: 2dppx),
