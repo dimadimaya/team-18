@@ -65,16 +65,16 @@
 
 .nav__item {
     transition: color var(--durationPrimary) var(--timingSecondary);
-    
-    & + & {
+
+    &+& {
         margin-left: 35px;
     }
 
     &:hover,
     &:focus,
     &:active {
-                color: var(--colorPrimary);
-            }
+        color: var(--colorPrimary);
+    }
 }
 
 .nav__link {
@@ -165,7 +165,7 @@
         fill: var(--colorPrimary);
         scale: 120%;
     }
-    
+
     @media screen and (min-width: 1200px) {
         display: none;
     }
@@ -189,8 +189,8 @@
     &:hover,
     &:focus,
     &:active {
-                color: var(--colorPrimary);
-            }
+        color: var(--colorPrimary);
+    }
 }
 
 .nav__item-mobile--current,
@@ -329,11 +329,11 @@
         0% {
             background-position: 0 50%;
         }
-        
+
         50% {
             background-position: 50% 50%;
         }
-        
+
         100% {
             background-position: 0 50%;
         }
@@ -392,46 +392,56 @@
 
 .animate-icecream {
     animation: none;
-            
-        &:hover {
-            animation: animate_icecream 1s infinite;
+
+    &:hover {
+        animation: animate_icecream 1s infinite;
+    }
+
+    @keyframes animate_icecream {
+        0% {
+            transform: scale3d(1, 1, 1);
         }
-        
-        @keyframes animate_icecream {
-            0% {
-                transform: scale3d(1, 1, 1);
-            }
-            10% {
-                transform: scale3d(1.03, 1.03, 1.03);
-            }
-            20% {
-                transform: scale3d(1.06, 1.06, 1.06);
-            }
-            30% {
-                transform: scale3d(1.09, 1.09, 1.09);
-            }
-            40% {
-                transform: scale3d(1.12, 1.12, 1.12);
-            }
-            50% {
-                transform: scale3d(1.15, 1.15, 1.15);
-            }
-            60% {
-                transform: scale3d(1.12, 1.12, 1.12);
-            }
-            70% {
-                transform: scale3d(1.09, 1.09, 1.09);
-            }
-            80%{
-                transform: scale3d(1.06, 1.06, 1.06);
-            }
-            90%{
-                transform: scale3d(1.03, 1.03, 1.03);
-            }
-            100% {
-                transform: scale3d(1, 1, 1);
-            }
+
+        10% {
+            transform: scale3d(1.03, 1.03, 1.03);
         }
+
+        20% {
+            transform: scale3d(1.06, 1.06, 1.06);
+        }
+
+        30% {
+            transform: scale3d(1.09, 1.09, 1.09);
+        }
+
+        40% {
+            transform: scale3d(1.12, 1.12, 1.12);
+        }
+
+        50% {
+            transform: scale3d(1.15, 1.15, 1.15);
+        }
+
+        60% {
+            transform: scale3d(1.12, 1.12, 1.12);
+        }
+
+        70% {
+            transform: scale3d(1.09, 1.09, 1.09);
+        }
+
+        80% {
+            transform: scale3d(1.06, 1.06, 1.06);
+        }
+
+        90% {
+            transform: scale3d(1.03, 1.03, 1.03);
+        }
+
+        100% {
+            transform: scale3d(1, 1, 1);
+        }
+    }
 }
 
 .hero__left-overlay {
@@ -515,7 +525,7 @@
 }
 
 .hero__button-item {
-    & + & {
+    &+& {
         margin-left: 8px;
     }
 }
@@ -535,7 +545,8 @@
         height: 40px;
     }
 
-    transition: background-color var(--durationPrimary) var(--timingPrimary), scale var(--durationSecondary) var(--timingSecondary);
+    transition: background-color var(--durationPrimary) var(--timingPrimary),
+    scale var(--durationSecondary) var(--timingSecondary);
 
     &:hover,
     &:focus {
@@ -682,9 +693,9 @@
 
     &:hover,
     &:focus {
-            background-color: var(--bgcBtnDark);
-            color: var(--colorWhite);
-            scale: 120%;
+        background-color: var(--bgcBtnDark);
+        color: var(--colorWhite);
+        scale: 120%;
     }
 }
 
@@ -828,53 +839,53 @@
     animation: animate_girl 1s infinite;
 
     &:hover {
-            animation: none;
-        }
-    
+        animation: none;
+    }
+
     @keyframes animate_girl {
-            0% {
-                transform: scale(1);
-            }
+        0% {
+            transform: scale(1);
+        }
 
-            10% {
-                transform: scale(1.02);
-            }
+        10% {
+            transform: scale(1.02);
+        }
 
-            20% {
-                transform: scale(1.04);
-            }
+        20% {
+            transform: scale(1.04);
+        }
 
-            30% {
-                transform: scale(1.06);
-            }
+        30% {
+            transform: scale(1.06);
+        }
 
-            40% {
-                transform: scale(1.08);
-            }
+        40% {
+            transform: scale(1.08);
+        }
 
-            50% {
-                transform: scale(1.1);
-            }
+        50% {
+            transform: scale(1.1);
+        }
 
-            60% {
-                transform: scale(1.08);
-            }
+        60% {
+            transform: scale(1.08);
+        }
 
-            70% {
-                transform: scale(1.06);
-            }
+        70% {
+            transform: scale(1.06);
+        }
 
-            80% {
-                transform: scale(1.04);
-            }
+        80% {
+            transform: scale(1.04);
+        }
 
-            90% {
-                transform: scale(1.02);
-            }
+        90% {
+            transform: scale(1.02);
+        }
 
-            100% {
-                transform: scale(1);
-            }
+        100% {
+            transform: scale(1);
+        }
     }
 }
 
@@ -896,4 +907,3 @@
         line-height: 0.91;
     }
 }
-

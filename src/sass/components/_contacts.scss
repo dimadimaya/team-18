@@ -2,37 +2,33 @@
   padding-bottom: 40px;
   @include flex-pos();
   background: var(--bgcSection);
-  background-image: linear-gradient(
-    var(--colorWhite) 0%,
-    var(--colorWhite) 24%,
-    var(--bgcSection) 24%,
-    var(--bgcSection) 100%
-  );
+  background-image: linear-gradient(var(--colorWhite) 0%,
+      var(--colorWhite) 24%,
+      var(--bgcSection) 24%,
+      var(--bgcSection) 100%);
 
   @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-      var(--colorWhite) 0%,
-      var(--colorWhite) 46%,
-      var(--bgcSection) 46%,
-      var(--bgcSection) 100%
-    );
+    background-image: linear-gradient(var(--colorWhite) 0%,
+        var(--colorWhite) 46%,
+        var(--bgcSection) 46%,
+        var(--bgcSection) 100%);
   }
 
   @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-      var(--colorWhite) 0%,
-      var(--colorWhite) 22%,
-      var(--bgcSection) 22%,
-      var(--bgcSection) 100%
-    );
+    background-image: linear-gradient(var(--colorWhite) 0%,
+        var(--colorWhite) 22%,
+        var(--bgcSection) 22%,
+        var(--bgcSection) 100%);
   }
 }
+
 .contacts__container {
   @media screen and (min-width: 768px) {
     padding-left: 16px;
     padding-right: 16px;
     max-width: 736px;
   }
+
   @media screen and (min-width: 1200px) {
     padding-left: 16px;
     padding-right: 16px;
@@ -100,6 +96,7 @@
     width: 138px;
   }
 }
+
 .contacts__place {
   letter-spacing: 0.04em;
   margin-top: 20px;
@@ -110,6 +107,7 @@
     margin-bottom: 12px;
   }
 }
+
 .contacts__description {
   line-height: 1.5;
 
@@ -123,6 +121,7 @@
   padding-bottom: 24px;
   border-top: 1px solid var(--colorLine);
   border-bottom: 1px solid var(--colorLine);
+
   @media screen and (min-width: 768px) {
     margin-top: 32px;
     margin-bottom: 32px;
@@ -138,6 +137,7 @@
     margin-bottom: 12px;
   }
 }
+
 .contacts__day-time {
   text-transform: uppercase;
   color: var(--colorOverline);
@@ -183,6 +183,7 @@
 .contacts__button-icon {
   width: 8px;
   height: 10px;
+
   &.button-red__icon {
     filter: brightness(100);
     zoom: 1.2;
@@ -248,6 +249,7 @@
   // fill: currentColor;
   margin-left: 12px;
 }
+
 .button-red:hover {
   animation: glowing 1300ms infinite;
 }
@@ -268,6 +270,7 @@
     box-shadow: 0 0 3px var(--bgcBtnDarkHover);
   }
 }
+
 .link-arrow {
   position: fixed;
   bottom: 20px;
@@ -292,6 +295,7 @@
     bottom: 16px;
     right: 16px;
   }
+
   color: var(--colorWhite);
   background-color: var(--bgcBtnDark);
   border: none;

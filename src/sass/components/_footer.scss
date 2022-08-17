@@ -9,15 +9,15 @@
     flex-wrap: wrap;
     margin-bottom: 40px;
 
-     @media screen and (min-width:$tablet){
+    @media screen and (min-width:$tablet) {
         margin-bottom: 0;
-     }
+    }
 }
 
 .footer__wrap {
     margin-bottom: 40px;
 
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$desktop) {
         margin-bottom: 60px;
     }
 }
@@ -32,7 +32,7 @@
     max-width: 232px;
     margin-bottom: 16px;
 
-    @media screen and (min-width:$tablet){
+    @media screen and (min-width:$tablet) {
         font-size: 26px;
         line-height: 1.15;
         letter-spacing: 0.04em;
@@ -40,9 +40,9 @@
         margin-bottom: 12px;
     }
 
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$desktop) {
         font-size: 30px;
-        line-height: 1.13; 
+        line-height: 1.13;
         max-width: 100%;
         margin-bottom: 16px;
     }
@@ -58,14 +58,14 @@
     text-align: left;
     max-width: 200px;
 
-    @media screen and (min-width:$tablet){
+    @media screen and (min-width:$tablet) {
         font-size: 48px;
         line-height: 1.15;
         letter-spacing: 0.06em;
         max-width: 340px;
     }
 
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$desktop) {
         font-size: 58px;
         line-height: 1.14;
         max-width: 100%;
@@ -79,7 +79,7 @@
     align-items: center;
     margin-left: auto;
 
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$desktop) {
         justify-content: start;
     }
 
@@ -91,11 +91,11 @@
     margin-bottom: 40px;
     margin-left: auto;
 
-    @media screen and (min-width:$tablet){
+    @media screen and (min-width:$tablet) {
         gap: 30px;
     }
 
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$desktop) {
         margin-top: 12px;
     }
 }
@@ -129,11 +129,11 @@
     line-height: 1.86;
     // margin-bottom: 40px;
 
-    @media screen and (min-width:$tablet){
+    @media screen and (min-width:$tablet) {
         font-size: 14px;
     }
 
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$desktop) {
         font-size: 16px;
         letter-spacing: 0.02em;
     }
@@ -150,11 +150,11 @@
     margin: 0 auto;
     margin-bottom: 16px;
 
-    @media screen and(min-width:$tablet){
+    @media screen and(min-width:$tablet) {
         margin-bottom: 8px;
     }
 
-    @media screen and (min-width:$desktop){
+    @media screen and (min-width:$desktop) {
         width: 1168px;
         margin-bottom: 8px;
     }
@@ -170,9 +170,8 @@
     text-align: center;
     margin: 0 auto;
 
-    @media screen and (min-width:$tablet){
-        line-height: 1.86;  
+    @media screen and (min-width:$tablet) {
+        line-height: 1.86;
         letter-spacing: 0.02em;
     }
 }
-

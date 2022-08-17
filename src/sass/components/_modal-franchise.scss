@@ -10,12 +10,14 @@
   background: rgba(0, 0, 0, 0.2);
   transition: opacity var(--durationPrimary) var(--timingPrimary);
 }
+
 .franchise__backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
   transition: opacity var(--durationPrimary) var(--timingPrimary);
 }
+
 .franchise__wrap {
   position: relative;
   visibility: visible;
@@ -66,6 +68,7 @@
     color: var(--colorPrimary);
   }
 }
+
 .form-field__button {
   margin: 0 auto;
   min-width: 150px;
@@ -156,6 +159,7 @@
   transition: fill var(--durationPrimary) var(--timingPrimary);
   z-index: 100;
 }
+
 .form-field__text {
   font-size: 12px;
   line-height: 1.17;
@@ -163,6 +167,7 @@
   color: var(--colorBlack);
   margin-bottom: 4px;
 }
+
 .form-field__input--textarea {
   padding: 11px 12px;
   border-radius: 4px;
@@ -174,6 +179,7 @@
     color: var(--colorPrimary);
   }
 }
+
 .franchise__wrap {
   padding: 40px 20px 20px;
   background-image: url('../images/mobile/mobile-about-background.jpg');
@@ -182,8 +188,8 @@
   background-position: center;
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url('../images/desktop/desktop-about-background.jpg');
   }
 
@@ -194,10 +200,11 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url('../images/desktop/desktop-about-background@2x.jpg');
   }
+
   @media screen and (min-width: 768px) {
     width: 400px;
   }

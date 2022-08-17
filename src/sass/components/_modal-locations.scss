@@ -3,6 +3,7 @@
     transform: translate(-50%, -50%) scale(0.1);
   }
 }
+
 .modal-locations__map,
 .modal-locations {
   width: 100%;
@@ -141,6 +142,7 @@
   transition: fill var(--durationPrimary) var(--timingPrimary);
   z-index: 100;
 }
+
 iframe {
   position: absolute;
   top: 0px;
